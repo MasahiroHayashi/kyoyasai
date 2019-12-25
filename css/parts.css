@@ -1,0 +1,132 @@
+﻿h1 {
+	margin: 10px -25px 10px -25px ;
+	padding: 5px 10px 3px 20px ;
+	background: #660099;
+	color: #FFFFFF;
+	clear:both;
+}
+h2 {
+	margin: 20px -22px 10px -22px ;
+	padding: 4px 10px 3px 20px ;
+	background: #CCCCFF;
+	clear:both;
+}
+h3 {
+	margin: 20px -19px 10px -19px ;
+	padding: 4px 10px 3px 20px ;
+	border-top: 2px solid #EAD9FF;  
+	border-bottom: 2px solid #EAD9FF;  
+	background: #663399 ;
+	color: #FFFFFF;
+	clear:both;
+}
+h4 {
+	margin: 40px -16px 10px -16px ;
+	padding: 4px 10px 3px 20px ;
+	background: #CCFF99;
+	border-top: 1px dashed  #009900 ;  
+	border-bottom: 1px dashed  #009900 ;  
+	clear:both;
+}
+hr.type1 {
+	margin: 10px -3px 10px -3px ;
+	height:1px; 
+	border:none; 
+	border-top: 1px dashed #DDD;  
+	clear:both;
+}
+hr.type2 {
+	margin: 10px -3px 10px -3px ;
+	height:1px; 
+	border:none; 
+	border-top: 1px solid #DDD;  
+	clear:both;
+}
+hr.type3 {
+	margin: 10px -3px 10px -3px ;
+	height:1px; 
+	border:none; 
+	border-top: 2px solid #DDD;  
+	clear:both;
+}
+/* ウインドウサイズ(横幅)750px以下はスマホ用スタイルを適用 */
+@media only screen and (max-width:750px){
+	h1 {
+		margin: 10px -10px 10px -10px ;
+		padding-left: 10px ;
+	}
+	h2 {
+		margin: 20px -8px 10px -8px ;
+		padding-left: 9px ;
+	}
+	h3 {
+		margin: 20px -6px 10px -6px ;
+		padding-left: 8px ;
+	}
+	h4 {
+		margin: 20px -4px 10px -4px ;
+		padding-left: 7px ;
+	}
+}
+p.type1 {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    padding-left:1em;
+    text-indent:-1em;
+}
+p.type1:before {
+    content: '';
+    display: inline-block;
+    border: transparent solid 8px;
+    border-left-color: #000080;
+    vertical-align: -1px;
+}
+p.type2 {
+    margin-top: 3px;
+    margin-bottom: 20px;
+    margin-left: -2px;
+    padding-left:1em;
+    text-indent:-1em;
+}
+p.type2:before {
+    content: '';
+    display: inline-block;
+    width: .7em;
+    height: .7em;
+    margin-right: .5em;
+    background: #004400;
+}
+p.type3 {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    padding-left:1em;
+    text-indent:-1em;
+}
+p.type3:before {
+    content: '';
+    display: inline-block;
+    margin-right: 4px;
+    border: transparent solid 5px;
+    border-left-color: #6699FF;
+    vertical-align: 1px;
+}
+p.type4 {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    padding-left:1em;
+    text-indent:-1em;
+}
+p.type4:before {
+    content: '';
+    display: inline-block;
+    width: .5em;
+    height: .5em;
+    margin-right: .5em;
+    background: #996699;
+    transform: rotate(45deg);
+    vertical-align: 2px;
+}
+.cardimg {
+	width:180px;
+	margin:15px;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+	if(location.protocol == 'http:') { //httpsへリダイレクト
+	  location.replace(location.href.replace(/http:/, 'https:'));
+	}
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+<meta name="description" content="京野菜をより身近に！京都市の京野菜オープンデータをデジタルアプリで。バトルデータを「創る」。プログラミング教育に「京育」効果。" />
+<meta name="keywords" content="京都,統計,国勢調査,人口,経済" />
+<link rel="canonical" href="https://kyoyasai.mirko.jp/" /> 
+<link rel="icon" href=""><!-- ファビコン -->
+<link rel="apple-touch-icon" sizes="180x180" href=""><!-- スマホ用アイコン -->
+
+<!--OGP設定-->
+<meta property="og:site_name" content="KyoYasai 京育カードバトル with AR" />
+<meta property="og:title" content="KyoYasai 京育カードバトル with AR" />
+<meta property="og:url" content="https://kyoyasai.mirko.jp/" />
+<meta property="og:image" content="" />
+<meta property="og:description" content="京野菜をより身近に！京都市の京野菜オープンデータをデジタルアプリで。バトルデータを「創る」。プログラミング教育に「京育」効果。" />
+<meta property="og:type" content="website" />
+<!--Twitter Card設定-->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Kyoto Lovers" />
+<meta name="twitter:creator" content="@Kyoto Lovers" />
+<meta name="twitter:title" content="KyoYasai 京育カードバトル with AR" />
+<meta name="twitter:description" content="京野菜をより身近に！京都市の京野菜オープンデータをデジタルアプリで。バトルデータを「創る」。プログラミング教育に「京育」効果。">
+<meta name="twitter:image:src" content="">
+
+<title>KyoYasai 京育カードバトル with AR</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">       <!-- 枠組みを指定するスタイルシート -->
+<link rel="stylesheet" type="text/css" href="css/parts.css">        <!-- 見出しなどを指定するスタイルシート -->
+<link rel="stylesheet" type="text/css" href="css/menu.css">         <!-- メニューバー用スタイルシート -->
+<script type="text/javascript" src="js/header_footer.js"></script>  <!-- 共通化したヘッダーとフッターを挿入するスクリプト -->
+
+
+<!-- モーダルウインドウ用 -->
+<script type="text/javascript" src="js/jquery_min.js"></script>
+<script type="text/javascript" src="js/modal2.js"></script>
+<link rel="stylesheet" type="text/css" href="css/modal.css">         <!-- メニューバー用スタイルシート -->
+
+<script type="text/javascript">
+	window.addEventListener("load",makeHeaderFooter,false);  // ヘッダーとフッターを挿入
+	window.addEventListener("load",callYasaiData,false);
+</script>
+
+
+</head>
+<body>
+<div id="modal-content"></div>
+<div class="parent" id="parent" style="display:none;">
+<div class="inner">
+<div id="header-box"><!-- ここに「header_footer.js」に書き込まれたヘッダー部分が自動で入ります --></div>
+<div id="main-box" style="text-align:center;">
+<a href="javascript:void(0);" onclick="openModal(0);" style="text-decoration: none;"><img src="cardimg/K001.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(1);" style="text-decoration: none;"><img src="cardimg/K002.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(2);" style="text-decoration: none;"><img src="cardimg/K003.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(3);" style="text-decoration: none;"><img src="cardimg/K004.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(4);" style="text-decoration: none;"><img src="cardimg/K005.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(5);" style="text-decoration: none;"><img src="cardimg/K006.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(6);" style="text-decoration: none;"><img src="cardimg/K007.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(7);" style="text-decoration: none;"><img src="cardimg/K008.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(8);" style="text-decoration: none;"><img src="cardimg/K009.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(9);" style="text-decoration: none;"><img src="cardimg/K010.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(10);" style="text-decoration: none;"><img src="cardimg/K011.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(11);" style="text-decoration: none;"><img src="cardimg/K012.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(12);" style="text-decoration: none;"><img src="cardimg/K013.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(13);" style="text-decoration: none;"><img src="cardimg/K014.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(14);" style="text-decoration: none;"><img src="cardimg/K015.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(15);" style="text-decoration: none;"><img src="cardimg/K016.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(16);" style="text-decoration: none;"><img src="cardimg/K017.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(17);" style="text-decoration: none;"><img src="cardimg/K018.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(18);" style="text-decoration: none;"><img src="cardimg/K019.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(19);" style="text-decoration: none;"><img src="cardimg/K020.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(20);" style="text-decoration: none;"><img src="cardimg/K021.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(21);" style="text-decoration: none;"><img src="cardimg/K022.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(22);" style="text-decoration: none;"><img src="cardimg/K023.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(23);" style="text-decoration: none;"><img src="cardimg/K024.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(24);" style="text-decoration: none;"><img src="cardimg/K025.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(25);" style="text-decoration: none;"><img src="cardimg/K026.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(26);" style="text-decoration: none;"><img src="cardimg/K027.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(27);" style="text-decoration: none;"><img src="cardimg/K028.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(28);" style="text-decoration: none;"><img src="cardimg/K029.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(29);" style="text-decoration: none;"><img src="cardimg/K030.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(30);" style="text-decoration: none;"><img src="cardimg/K031.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(31);" style="text-decoration: none;"><img src="cardimg/K032.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(32);" style="text-decoration: none;"><img src="cardimg/K033.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(33);" style="text-decoration: none;"><img src="cardimg/K034.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(34);" style="text-decoration: none;"><img src="cardimg/K035.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(35);" style="text-decoration: none;"><img src="cardimg/K036.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(36);" style="text-decoration: none;"><img src="cardimg/K037.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(37);" style="text-decoration: none;"><img src="cardimg/K038.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(38);" style="text-decoration: none;"><img src="cardimg/K039.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(39);" style="text-decoration: none;"><img src="cardimg/K040.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(40);" style="text-decoration: none;"><img src="cardimg/K041.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(41);" style="text-decoration: none;"><img src="cardimg/K042.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(42);" style="text-decoration: none;"><img src="cardimg/K043.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(43);" style="text-decoration: none;"><img src="cardimg/K044.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(44);" style="text-decoration: none;"><img src="cardimg/K045.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(45);" style="text-decoration: none;"><img src="cardimg/K046.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(46);" style="text-decoration: none;"><img src="cardimg/K047.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(47);" style="text-decoration: none;"><img src="cardimg/K048.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(48);" style="text-decoration: none;"><img src="cardimg/K049.jpg" class="cardimg"></a>
+
+<a href="javascript:void(0);" onclick="openModal(49);" style="text-decoration: none;"><img src="cardimg/K050.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(50);" style="text-decoration: none;"><img src="cardimg/K051.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(51);" style="text-decoration: none;"><img src="cardimg/K052.jpg" class="cardimg"></a>
+<a href="javascript:void(0);" onclick="openModal(52);" style="text-decoration: none;"><img src="cardimg/K053.jpg" class="cardimg"></a>
+</div>
+
+<div id="footer-box"><!-- ここに「header_footer.js」に書き込まれたフッター部分が自動で入ります --></div>
+
+
+</div><!-- class="inner"終了 -->
+</div><!-- class="parent"終了 -->
+
+
+</body>
+</html>

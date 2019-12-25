@@ -1,0 +1,82 @@
+#modal-content {
+	width: 800px ;
+	height: 90% ; //★これは最初のほうに。順番狂うと変になる
+	margin: 0 ;
+	//margin-left: -9px ;
+	padding: 10px 10px 10px 10px ;
+	//border: 2px solid #aaa ;
+	border-radius: 5px ;
+	background: #90EE90 ;
+	position: fixed ;
+	display: none ;
+	z-index: 2000 ;
+	font-size:small ;
+	overflow: auto ; //★これは最後に。順番狂うと変になる
+}
+#modal-overlay {
+	z-index: 1000 ;
+	display: none ;
+	position: fixed ;
+	top: 0 ;
+	left: 0 ;
+	width: 100% ;
+	height: 100% ;
+	background-color: rgba( 0,0,0, 0.75 ) ;
+	//background-color: rgba( 204,204,255, 0.75 ) ;
+}
+.button-link {
+	color: #000 ;
+	font-size: x-large ;
+	font-weight: bold ;
+	text-decoration: none ;
+	//text-decoration: underline ;
+}
+.button-link:hover {
+	cursor: pointer ;
+	color: #f00 ;
+}
+.modal_table {
+	width: 100% ;
+	padding-bottom: 10px ;
+}
+.modal_table th {
+	width: 180px;
+	padding: 4px 4px 4px 8px;
+	text-align: left;
+	background: #CCFFCC;
+	border-radius: 3px ;
+}
+.modal_table td {
+	padding: 4px 4px 4px 8px;
+	text-align: left;
+	color: #000;
+	background: #FFFFFF;
+	border-radius: 3px ;
+}
+@media only screen and (max-width:750px){ 
+	#modal-content {
+		left: 30px;
+		width: 100% ;
+		height: 90% ;
+		padding: 0 ;
+		font-size:x-small;
+	}
+	#modal-overlay {
+		top: 0 ;
+		left: 0 ;
+		width: 100% ;
+		height: 100% ;
+	}
+	.modal_table {
+		width:100%;
+	}
+	.modal_table th {
+		width:30%;
+		padding: 2px 2px 2px 4px;
+		font-size:x-small;
+	}
+	.modal_table td {
+		padding: 2px 2px 2px 4px;
+		font-size:x-small;
+	}
+}

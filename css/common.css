@@ -1,0 +1,74 @@
+﻿html {
+        overflow-y: scroll; /*レイアウトが変わらないように強制的にスクロールバーを出す*/
+	word-break: break-all; /*リンクを強制改行する*/
+}
+body {
+	background:linear-gradient(180deg, white 0%, white 131px, #CCFF66 131px, #CCFF66 100%);
+	margin:0;
+	font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+/********** 全体の枠のスタイル **********/
+.parent{
+	position: relative;
+	width: 100%;
+}
+.inner{
+	width: 920px;
+	padding:0 0 0 0;
+	margin: auto;
+	background-color: #fff;
+}
+/********** コンテンツ部分の枠のスタイル **********/
+#main-box {
+	margin:0 0 0 0;
+	padding:10px 25px 0 25px;  
+	border: 0px solid #000000;
+}
+#footer-box {
+	clear: both; <!-- 回り込みの解除 -->
+	padding-bottom:30px;
+}
+a:hover{
+	outline:none; /* リンクを囲む点線は非表示 */
+}
+
+/* 回り込み画像 */
+.floatimg{
+	float:right;
+	border-radius: 5px;
+	margin-left:20px;
+	margin-bottom:15px
+}
+.imgStyle{
+	width:600px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+}
+/* ウインドウサイズ(横幅)750px以下はスマホ用スタイルを適用 */
+@media only screen and (max-width:750px){
+	.inner{
+		width: 100%;
+		padding:0;
+		font-size:90%;
+	}
+	#main-box {
+		padding:10px 10px 0 10px;  
+	}
+}
+
+/* ウインドウサイズ(横幅)470px以下はタイトルイメージを縮小 */
+@media only screen and (max-width:470px){
+	#titleimg{
+		width:100%;
+	}
+	.floatimg{
+		width:98%;
+	}
+	.imgStyle{
+		width:98%;
+	}
+}
+
+ 
+ 
