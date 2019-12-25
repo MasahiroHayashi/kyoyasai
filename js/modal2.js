@@ -32,8 +32,8 @@ function openModal(num){
 	var kText = "";
 	kText += "<div style='text-align:right;'><a class='button-link' href='javascript:void(0);' onclick='closeModal();'>×</a></div>";
 	kText += "<table class='modal_table'>";	
-	alert(header[0]);
-	alert(data[num][header[1]]);
+	alert(JSON.stringify(header,undefined,1));
+	alert(JSON.stringify(data,undefined,1));
 	
 	
 	
