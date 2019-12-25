@@ -33,8 +33,7 @@ function openModal(num){
 	kText += "<div style='text-align:right;'><a class='button-link' href='javascript:void(0);' onclick='closeModal();'>×</a></div>";
 	kText += "<table class='modal_table'>";	
 	for(let i=0 ; i<header.length ; i++) {
-		//kText += "<tr><th>" + header[i] + "</th><td>" + data[num][header[i]] + "</td></tr>";
-		kText += "<tr><th>" + header[i] + "</th><td>" + data[num].header[i] + "</td></tr>";
+		kText += "<tr><th>" + header[i] + "</th><td>" + data[num][header[i]] + "</td></tr>";
 	}
 	kText += "</table>"
 	document.getElementById('modal-content').innerHTML = kText ;
