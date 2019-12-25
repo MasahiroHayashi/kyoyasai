@@ -2,7 +2,7 @@ function makeHeaderFooter(){
 	var header_txt = (function() {/*
 
 	<!-- ヘッダー部分（メニュー等）を修正したい場合は，以下を修正すること。 -->
-	<a href="https://kyoyasai.mirko.jp/"><img src="img/title.jpg" id="titleimg"></a>
+	<a href="https://kyoyasai.mirko.jp/"><img src="img/title.png" id="titleimg"></a>
 	<ul id="fade-in" class="dropmenu">
 	  <li class="liClassA"><a href="https://kyoyasai.mirko.jp/" style="text-decoration: none;"><span>ＴＯＰ</span></a></li>
 	  <li class="liClassB"><a href="battle.html" style="text-decoration: none;"><span>京育カードバトル</span></a></li>
