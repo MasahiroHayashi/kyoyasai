@@ -2,7 +2,7 @@ function makeHeaderFooter(){
 	var header_txt = (function() {/*
 
 	<!-- ヘッダー部分（メニュー等）を修正したい場合は，以下を修正すること。 -->
-	<div style="text-align:center;"><a href="https://kyoyasai.mirko.jp/"><img src="img/title.png" id="titleimg"></a></div>
+	<div style="text-align:center;"><a href="https://kyoyasai.mirko.jp/"><img src="img/title.jpg" id="titleimg"></a></div>
 	<ul id="fade-in" class="dropmenu">
 	  <li class="liClassA"><a href="https://kyoyasai.mirko.jp/" style="text-decoration: none;"><span>ＴＯＰ</span></a></li>
 	  <li class="liClassB"><a href="battle.html" style="text-decoration: none;"><span>京育カードバトル</span></a></li>
@@ -31,5 +31,14 @@ function makeHeaderFooter(){
 	*/}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1].replace(/\n|\r/g, "");
 	document.getElementById('header-box').innerHTML = header_txt ;
 	document.getElementById('footer-box').innerHTML = footer_txt ;
-	//document.getElementById('parent').style.display = 'block'; //ヘッダーとフッターを挿入してから最後にペアレントを表示
+	document.getElementById('parent').style.display = 'block'; //ヘッダーとフッターを挿入してから最後にペアレントを表示
+	
+	<!-- フッター部分ここまで -->
+	$(document).ready(function(){
+		$('.slider').bxSlider({
+			auto: true,
+			pause: 5000,
+		});
+	});
+	
 }
