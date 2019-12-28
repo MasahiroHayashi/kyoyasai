@@ -6,7 +6,7 @@ function callYasaiData() {
 	var fileData = readTextFile(fileName) ;
 	var csvData = fileData;
 	csvData = csvData.replace(/\r\n+$/g,''); //終端に改行コード（CR+LF）があれば削除
-	var lines = csvData.split("\r\n");
+	var lines = csvData.split("\n");
 	var result = [];
 	var headers = lines[0].split(",");
 	for(var i=1;i<lines.length;i++){
