@@ -31,5 +31,5 @@ function makeHeaderFooter(){
 	*/}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1].replace(/\n|\r/g, "");
 	document.getElementById('header-box').innerHTML = header_txt ;
 	document.getElementById('footer-box').innerHTML = footer_txt ;
-	document.getElementById('parent').style.display = 'block'; //ヘッダーとフッターを挿入してから最後にペアレントを表示
+	//document.getElementById('parent').style.display = 'block'; //ヘッダーとフッターを挿入してから最後にペアレントを表示
 }
