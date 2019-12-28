@@ -34,5 +34,11 @@ function makeHeaderFooter(){
 	document.getElementById('parent').style.display = 'block'; //ヘッダーとフッターを挿入してから最後にペアレントを表示
 	
 	<!-- フッター部分ここまで -->
+	$(document).ready(function(){
+		$('.slider').bxSlider({
+			auto: true,
+			pause: 5000,
+		});
+	});
 	
 }
