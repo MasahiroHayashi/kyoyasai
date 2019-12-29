@@ -1,137 +1,27 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript">
-	if(location.protocol == 'http:') { //httpsへリダイレクト
-	  location.replace(location.href.replace(/http:/, 'https:'));
-	}
-</script>
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
-<meta name="description" content="京野菜をより身近に！京都市の京野菜オープンデータをデジタルアプリで。バトルデータを「創る」。プログラミング教育に「京育」効果。" />
-<meta name="keywords" content="京都,統計,国勢調査,人口,経済" />
-<link rel="canonical" href="https://kyoyasai.mirko.jp/" /> 
-<link rel="icon" href=""><!-- ファビコン -->
-<link rel="apple-touch-icon" sizes="180x180" href=""><!-- スマホ用アイコン -->
-
-<!--OGP設定-->
-<meta property="og:site_name" content="KyoYasai 京育カードバトル with AR" />
-<meta property="og:title" content="KyoYasai 京育カードバトル with AR" />
-<meta property="og:url" content="https://kyoyasai.mirko.jp/" />
-<meta property="og:image" content="" />
-<meta property="og:description" content="京野菜をより身近に！京都市の京野菜オープンデータをデジタルアプリで。バトルデータを「創る」。プログラミング教育に「京育」効果。" />
-<meta property="og:type" content="website" />
-<!--Twitter Card設定-->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@Kyoto Lovers" />
-<meta name="twitter:creator" content="@Kyoto Lovers" />
-<meta name="twitter:title" content="KyoYasai 京育カードバトル with AR" />
-<meta name="twitter:description" content="京野菜をより身近に！京都市の京野菜オープンデータをデジタルアプリで。バトルデータを「創る」。プログラミング教育に「京育」効果。">
-<meta name="twitter:image:src" content="">
-
-<title>KyoYasai 京育カードバトル with AR</title>
-<link rel="stylesheet" type="text/css" href="css/common.css">       <!-- 枠組みを指定するスタイルシート -->
-<link rel="stylesheet" type="text/css" href="css/parts.css">        <!-- 見出しなどを指定するスタイルシート -->
-<link rel="stylesheet" type="text/css" href="css/menu.css">         <!-- メニューバー用スタイルシート -->
-<script src="js/header_footer2.js"></script>
-
-<script type="text/javascript">
-	window.addEventListener("load",makeHeaderFooter,false);  // ヘッダーとフッターを挿入
-</script>
-<!-- スライドショー用-->
-
-<!-- jQuery library (served from Google) -->
-<script src="js/jquery_min.js"></script>
-<script src="js/jquery.bxslider.min.js"></script>
-<link href="css/jquery.bxslider.css" rel="stylesheet" />
-
+<title>京野菜カードバトルアプリ WEBサイト（仮）</title>
 </head>
 <body>
-
-<div class="parent" id="parent"  style="display:none;">
-<div class="inner">
-<div id="header-box"><!-- ここに「header_footer.js」に書き込まれたヘッダー部分が自動で入ります --></div>
-<div id="main-box">
-
-<!-- スライドショー用 -->
-<div class="slider">
-<img src="img/gazou1.png" height="360" alt="">
-<img src="img/gazou2.png" height="360" alt="">
-<img src="img/gazou3.png" height="360" alt="">
-<img src="img/gazou4.png" height="360" alt="">
-<img src="img/gazou5.png" height="360" alt="">
-<img src="img/gazou6.png" height="360" alt="">
-</div>
-
-
-<h4>発想のきっかけ</h4>
-<p style="line-height:150%;">
-　私たち <span style="font-weight:bold;color:#660033;">Kyoto Lovers</span> は、京都の地産地消や食育をもっと身近にするために、こどもたちが学べる地域教育素材を開発し、学習機会を創出することが重要と考えました。<br>
-　そこで私たちは、学習指導要領改訂によりＩＣＴ教育が本格導入されることを踏まえ、京野菜に親しみをもってもらうための<B>「京育」</B>ツールを開発することといたしました。<br><br>
-<span style="font-size:small;">※京都市教育委員会では、「京都ならではの学校教育」として、市立小学校で、和食文化や農業団体等と連携した食育授業を実施しています。（出典：<a href="https://www.city.kyoto.lg.jp/kyoiku/page/0000160155.html">京都市教育委員会ＨＰ</a>）</span>
-</p>
-
-
-<h4>「KyoYasai 京育カードバトル」でこう変わる！</h4>
-<p style="line-height:150%;">
-<img src="img/gameimg2.png" class="floatimg">
-<p class="type2">学習教材として利用することで、京都市の伝統文化、地産地消、食育についての理解が深まります。</p>
-<p class="type2">ゲームの「わざ」を通して、京野菜に対する興味を喚起し、楽しく京野菜について学ぶきっかけを作ります。</p>
-<p class="type2">デジタル地域資料として図書館や資料館等公共施設での活用、イベント等での活用を通じ、こどもからお年寄りまで手軽に、京野菜を学べ、理解が深まります。</p>
-<p class="type2">将来的には商用利用の可能性もあり、京野菜グッズの販売等、様々な活用法が期待できます。</p>
-</p>
-
-<h4>自治体オープンデータの活用・他団体との協力</h4>
-<p style="line-height:150%;">
-<a href="https://data.city.kyoto.lg.jp/"><img src="img/kyotocity.png" class="floatimg_l"></a>
-<p class="type2">京野菜カード用のデータセット作成にあたり、京都市がオープンデータとして公開している <a href="https://data.city.kyoto.lg.jp/node/95679">京野菜関連データセット</a> (CC-BY-4.0)を利用させていただきました。</p>
-<p class="type2">
-京野菜カードの制作にあたり、<a href="http://kyoyasai.kyoto/">公益社団法人京のふるさと産品協会</a>様、<a href="http://京の旬野菜.jp">京都市産業観光局農林振興室農林企画課</a>様、<a href="https://kyomachi-seika.jp/">精華町役場</a>様から写真や画像の利用許可のご協力をいただきました。この場をお借りしてお礼申し上げます。
-</p>
-</p>
-
-<h4>ＧＬＡＭデータの活用</h4>
-<p style="line-height:150%;">
-<img src="img/dezicore.png" class="floatimg">
-<div style="font-size:xx-large;text-align:center;margin:30px;">野菜 ＝ 蔬菜（そさい）</div>
-
-<p class="type2"><a href="https://jpsearch.go.jp/">Japan Search（ジャパンサーチ）</a> より<br>
-　・<a href="https://jpsearch.go.jp/item/cobas-160692">蔬菜図</a>（東京国立博物館所蔵、狩野秀頼筆、室町時代）<br>
-　・<a href="https://jpsearch.go.jp/item/cobas-5019">蔬菜図</a>（京都国立博物館所蔵、容祖椿（仲生）筆）
-</p>
-<p class="type2"><a href="https://dl.ndl.go.jp/">国立国会図書館デジタルコレクション</a> より<br>
-　・<a href="http://dl.ndl.go.jp/info:ndljp/pid/840212">蔬菜と果樹</a>（柳内義之進 著、大倉書店、1906）<br>
-　・<a href="https://dl.ndl.go.jp/info:ndljp/pid/905586">蔬菜図解</a>（磯貝唯吉 編著、振農社、1913）<br>
-　・<a href="http://dl.ndl.go.jp/info:ndljp/pid/1022731">漬物の上手な漬け方</a>（主婦之友社編輯局 編、主婦之友社、1928）
-</p>
-
-</p>
-
-<h4>Ｋｙｏｔｏ　Ｌｏｖｅｒｓ　メンバー紹介（2019年12月現在）</h4>
-<p class="type2" style="margin-bottom:7px;">代表<br>
-田邉 豊（大阪工業大学４回生）
-</p>
-<p class="type2">メンバー（五十音順）<br>
-青木 和人（code for 山城、京都府立大学）<br>
-大久保 公則（精華町役場）<br>
-呉服 淳二郎（奈良市教育委員会）<br>
-河野 雅彦（精華町役場）<br>
-古崎 晃司（大阪電気通信大学）<br>
-田村 弘昭（大阪電気通信大学）<br>
-中川 佳代子（株式会社ATR）<br>
-中村 裕太（奈良先端科学技術大学院大学）<br>
-林 正洋（京都市役所）
-</p>
-
-
-
-</div>
-
-
-<div id="footer-box"><!-- ここに「header_footer.js」に書き込まれたフッター部分が自動で入ります --></div>
-
-
-</div><!-- class="inner"終了 -->
-</div><!-- class="parent"終了 -->
+<center>
+<h1>京野菜カードバトルアプリ WEBサイト（仮）</h1>
+<img src="gamen.jpg" width="600px">
+<br>
+このサイトはGitHub Pagesを利用しています。GitHub使える方であれば誰でも更新できます。
+<br>
+SlackでGitHubのアカウント名を教えていただけたら、コラボレータ（共同編集者）に追加します。
+<br>
+コラボレータに追加されたらメールが届くので承認リンクをクリックすれば完了です。
+<br>
+リポジトリをクローンし、HTMLを編集して、マスターに直接プッシュしてください。 
+<br>
+そうするとこのページが更新されます。ご協力よろしくお願いします。
+<br>
+リポジトリはこちら→　<a href="https://github.com/MasahiroHayashi/kyoyasai">https://github.com/MasahiroHayashi/kyoyasai</a>
+<br><br>
+<img src="card.jpg" width="600px">
+</center>
 </body>
 </html>
