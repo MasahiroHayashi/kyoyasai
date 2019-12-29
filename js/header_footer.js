@@ -23,7 +23,7 @@ function makeHeaderFooter(){
 	<div style="margin:0 10px 0 15px; padding-bottom:30px;">
 	<div style="margin:0 0 0 0; font-size:large; font-weight:bold;text-align:center;">&copy; アーバンデータチャレンジ2019京都府ブロック　チーム「<span style="color:#660033;">Kyoto Lovers</span>」</div>
 	<div style="margin:20px 0 0 0;text-align:center;font-size:14px;">お問い合わせは<a href="">こちら</a></div>
-	<div style="margin:20px 0 0 0; font-size:large; font-weight:bold;text-align:center;"><img src="img/lovers.png" width="300px"></div>
+	<div style="margin:20px 0 0 0; font-size:large; font-weight:bold;text-align:center;"><img src="img/lovers.png" class="footimg"></div>
 	</div>
 
 	<!-- フッター部分ここまで -->
