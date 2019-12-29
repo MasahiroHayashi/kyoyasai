@@ -2,7 +2,7 @@
 var data;
 
 function callYasaiData() { 
-	var fileName = "data/yasai3.csv";
+	var fileName = "data/yasai4.csv";
 	var fileData = readTextFile(fileName) ;
 	var csvData = fileData;
 	csvData = csvData.replace(/\r\n+$/g,''); //終端に改行コード（CR+LF）があれば削除
@@ -30,10 +30,16 @@ function readTextFile(file) {
 
 function openModal(num){
 	var kText = "";
+	var urlcode = "";
 	kText += "<div style='text-align:right;'><a class='button-link' href='javascript:void(0);' onclick='closeModal();'>×</a></div>";
 	kText += "<table class='modal_table'>";	
 	for(let i=0 ; i<header.length ; i++) {
-		kText += "<tr><th>" + header[i] + "</th><td>" + data[num][header[i]] + "</td></tr>";
+		if(data[num][header[i]].slice(0,4) == "http"){
+			urlcode = "<a href='" + data[num][header[i]] +"' target='_blank'>" + data[num][header[i]] + "</a>" ;
+		}else{
+			urlcode = data[num][header[i]]  ;
+		}
+		kText += "<tr><th>" + header[i] + "</th><td>" + urlcode + "</td></tr>";
 	}
 	kText += "</table>"
 	document.getElementById('modal-content').innerHTML = kText ;
