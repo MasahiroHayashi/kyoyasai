@@ -73,16 +73,16 @@ a:hover{
 	.footimg{
 		width:98%;
 	}
-}
-
-/* ウインドウサイズ(横幅)470px以下はタイトルイメージを縮小 */
-@media only screen and (max-width:470px){
 	.floatimg{
 		width:98%;
 	}
 	.floatimg_l{
 		width:98%;
 	}
+}
+
+/* ウインドウサイズ(横幅)470px以下はタイトルイメージを縮小 */
+@media only screen and (max-width:470px){
 }
 
  
