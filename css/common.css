@@ -64,23 +64,23 @@ a:hover{
 	#main-box {
 		padding:10px 10px 0 10px;  
 	}
-}
-
-/* ウインドウサイズ(横幅)470px以下はタイトルイメージを縮小 */
-@media only screen and (max-width:470px){
 	#titleimg{
-		width:100%;
-	}
-	.floatimg{
 		width:98%;
 	}
-	.floatimg_l{
+	.imgStyle{
 		width:98%;
 	}
 	.footimg{
 		width:98%;
 	}
-	.imgStyle{
+}
+
+/* ウインドウサイズ(横幅)470px以下はタイトルイメージを縮小 */
+@media only screen and (max-width:470px){
+	.floatimg{
+		width:98%;
+	}
+	.floatimg_l{
 		width:98%;
 	}
 }
