@@ -2,7 +2,7 @@
 var data;
 
 function callYasaiData() { 
-	var fileName = "data/yasai4.csv";
+	var fileName = "data/yasai.csv";
 	var fileData = readTextFile(fileName) ;
 	var csvData = fileData;
 	csvData = csvData.replace(/\r\n+$/g,''); //終端に改行コード（CR+LF）があれば削除

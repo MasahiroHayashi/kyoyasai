@@ -39,7 +39,13 @@ a:hover{
 	margin-left:20px;
 	margin-bottom:15px
 }
-.floatimg_l{
+.floatimg_l {
+	float:left;
+	border-radius: 5px;
+	margin-right:40px;
+	margin-bottom:15px
+}
+.floatimg_l2 {
 	float:left;
 	border-radius: 5px;
 	margin-right:40px;
@@ -78,6 +84,9 @@ a:hover{
 	}
 	.floatimg_l{
 		width:40%;
+	}
+	.floatimg_l2{
+		width:25%;
 	}
 }
 
