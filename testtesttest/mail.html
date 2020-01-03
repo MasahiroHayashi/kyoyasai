@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+<meta name="description" content="京野菜をより身近に！京都市の京野菜オープンデータをデジタルアプリで。バトルデータを「創る」。プログラミング教育に「京育」効果。" />
+<meta name="keywords" content="京都,京野菜,カードバトル" />
+<title>メールフォーム</title>
+<style type="text/css">
+html {
+    overflow-y: scroll; /*レイアウトが変わらないように強制的にスクロールバーを出す*/
+	word-break: break-all; /*リンクを強制改行する*/
+}
+body {
+	font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	background-color:#CCFFCC;
+	color:#fff;
+	font-size:small;
+}
+/********** 全体の枠のスタイル **********/
+.parent{
+	position: relative;
+	width: 100%;
+}
+.inner{
+	width: 800px;
+	padding:15px 15px 15px 35px;
+	margin: auto;
+	background-color: #eee;
+	background-image: linear-gradient(black,green,black);
+}
+textarea { width: 500px; height: 10em; } 
+input { width: 300px;} 
+
+@media only screen and (max-width:750px){
+    body {margin:0;}
+    .inner {
+        width: 95%;
+	padding:15px 0 15px 10px;
+    }
+    textarea { width: 85%;} 
+    input { width: 85%;} 
+	#titleimg{
+		width:98%;
+	}
+}
+
+table.formTable{
+	background-color:#DDDDDD;
+	width:100%;
+	margin:0 auto;
+	border:1px solid #000000;
+	border-radius: 4px;
+}
+table.formTable td,table.formTable th{
+	border:0px solid #000000;
+	padding:10px;
+}
+table.formTable th{
+	width:140px;
+	font-weight:normal;
+	text-align:left;
+}
+.button {
+	display: inline-block;
+	width: 200px;
+	height:40px;
+	background:#008080;
+ 	color:#FFF;
+	font-size: 100%;
+	border:2px solid #aaa;
+	border-radius:2px;
+}
+.button:hover {
+	cursor:pointer; 
+	background :#4e91e4;
+}
+.textbox {
+	border-radius:2px;
+}
+
+</style>
+
+</head>
+<body>
+<div class="parent">
+  <div class="inner">
+
+  KyoYasai 京育カードバトル　Kyoto Lovers　へのメッセージはこちらへどうぞ
+  <form method="post" action="https://www.mirko.jp/kyoyasai/mail.php">
+	<p style="margin-bottom:0;margin-top:10px;">お名前（※必須）</p>
+	<input type="text" name="お名前" class="textbox">
+	<p style="margin-bottom:0;margin-top:10px;">メールアドレス</p>
+	<input type="text" name="メールアドレス"  class="textbox">
+	<p style="margin-bottom:0;margin-top:10px;">メッセージ</p>
+	<textarea name="メッセージ" class="textbox"></textarea><br>
+	<input class="button "type="submit" value="　 確認画面へ 　">　
+
+  </form>
+
+
+</div>
+</div>
+
+</body>
+</html>
