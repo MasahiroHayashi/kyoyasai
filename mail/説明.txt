@@ -1,2 +1,2 @@
-���[���t�H�[��(mail.php)��PHP�œ��삷�邽�߁AGitHub�ł͓��삵�܂���B
-����āA�т̌l�T�[�o�ɂ����Ă��܂��B
+﻿メールフォーム(mail.php)はPHPで動作するため、GitHubでは動作しません。
+よって、林の個人サーバにあげています。
