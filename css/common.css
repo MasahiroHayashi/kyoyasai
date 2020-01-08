@@ -63,6 +63,10 @@ a:hover{
 .footimg{
 	width:300px;
 }
+#titleimg{
+	 width:620px;
+	 height:124px;
+}
 /* ウインドウサイズ(横幅)750px以下はスマホ用スタイルを適用 */
 @media only screen and (max-width:750px){
 	.inner{
@@ -75,6 +79,7 @@ a:hover{
 	}
 	#titleimg{
 		width:98%;
+		height:initial;
 	}
 	.imgStyle{
 		width:98%;
