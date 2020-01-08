@@ -24,8 +24,8 @@ h4 {
 	margin: 40px -16px 10px -16px ;
 	padding: 4px 10px 3px 20px ;
 	background: #CCFF99;
-	border-top: 1px dashed  #009900 ;  
-	border-bottom: 1px dashed  #009900 ;  
+	border-top: 1px solid  #66CC99 ;  
+	border-bottom: 1px solid  #66CC99 ;  
 	clear:both;
 }
 hr.type1 {
