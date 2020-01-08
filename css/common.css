@@ -6,6 +6,9 @@ body {
 	background:linear-gradient(180deg, white 0%, white 131px, #CCFF66 131px, #CCFF66 100%);
 	margin:0;
 	font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	background-image: url(../img/111.jpg),url(../img/back.jpg);
+	background-size: auto,contain;    
+	background-repeat:  no-repeat,repeat;
 }
 /********** 全体の枠のスタイル **********/
 .parent{
