@@ -16,16 +16,13 @@ function makeHeaderFooter(){
 	
 	var footer_txt = (function() {/*
 
-	<!-- フッター部分を修正したい場合は，以下を修正すること。 -->
-
-	<hr style="height: 1px;  border: none;  border-top: 15px #CCFF66 solid;  margin: 20px 0 20px 0;">
-	<!-- 所属情報 -->
-	<div style="margin:0 10px 0 15px; padding-bottom:30px;">
+	<!-- フッター部分を修正したい場合は，以下を修正すること。-->
+	<div style="height:30px;background-color:#004400;"></div>
+	<div style="margin:0 10px 0 15px; padding:20px 0 30px 0;">
 	<div style="margin:0 0 0 0; font-size:large; font-weight:bold;text-align:center;">&copy; アーバンデータチャレンジ2019京都府ブロック　チーム「<span style="color:#660033;">Kyoto Lovers</span>」</div>
 	<div style="margin:20px 0 0 0;text-align:center;font-size:14px;">お問い合わせは<a href="mail/mail.html">こちら</a></div>
 	<div style="margin:20px 0 0 0; font-size:large; font-weight:bold;text-align:center;"><img src="img/lovers.png" class="footimg"></div>
 	</div>
-
 	<!-- フッター部分ここまで -->
 
 	*/}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1].replace(/\n|\r/g, "");
