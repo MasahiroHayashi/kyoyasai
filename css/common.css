@@ -36,6 +36,11 @@ a:hover{
 }
 
 /* 回り込み画像 */
+.tripleimg{
+	border-radius: 100px;
+	margin:20px;
+	width:200px;
+}
 .floatimg{
 	float:right;
 	border-radius: 5px;
@@ -80,6 +85,10 @@ a:hover{
 	#titleimg{
 		width:98%;
 		height:initial;
+	}
+	.tripleimg{
+		width:30%;
+		margin:5px;
 	}
 	.imgStyle{
 		width:98%;
