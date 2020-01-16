@@ -37,7 +37,7 @@ function openModal(num){
 		if(data[num][header[i]].slice(-3).toLowerCase() == "jpg" || data[num][header[i]].slice(-3).toLowerCase() == "png"){
 			
 			urlcode = "<div style='text-align:center;'><img src='" + data[num][header[i]] + "'class='cardimgcls'></div>" ;
-			urlcode += "<br><a href='" + data[num][header[i]] +"' target='_blank'>" + data[num][header[i]] + "</a>" ;
+			urlcode += "<a href='" + data[num][header[i]] +"' target='_blank'>" + data[num][header[i]] + "</a>" ;
 			
 		}else if(data[num][header[i]].slice(0,4) == "http"){
 			urlcode = "<a href='" + data[num][header[i]] +"' target='_blank'>" + data[num][header[i]] + "</a>" ;
