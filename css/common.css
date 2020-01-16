@@ -65,6 +65,9 @@ a:hover{
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 }
+.cardimgcls{
+	width:50%;
+}
 .footimg{
 	width:300px;
 }
@@ -92,6 +95,9 @@ a:hover{
 	}
 	.imgStyle{
 		width:98%;
+	}
+	.cardimgcls{
+		width:80%;
 	}
 	.footimg{
 		width:98%;
