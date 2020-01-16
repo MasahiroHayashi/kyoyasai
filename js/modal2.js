@@ -35,9 +35,9 @@ function openModal(num){
 	kText += "<table class='modal_table'>";	
 	for(let i=0 ; i<header.length ; i++) {
 		if(data[num][header[i]].slice(-3).toLowerCase() == "jpg" || data[num][header[i]].slice(-3).toLowerCase() == "png"){
-			urlcode = "<a href='" + data[num][header[i]] +"' target='_blank'>" + data[num][header[i]] + "</a>" ;
-		}else if(data[num][header[i]].slice(0,4) == "http"){
 			urlcode = "<img src='" + data[num][header[i]] + "'>" ;
+		}else if(data[num][header[i]].slice(0,4) == "http"){
+			urlcode = "<a href='" + data[num][header[i]] +"' target='_blank'>" + data[num][header[i]] + "</a>" ;
 		}else{
 			urlcode = data[num][header[i]]  ;
 		}
