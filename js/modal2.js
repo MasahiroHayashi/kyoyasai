@@ -36,6 +36,8 @@ function openModal(num){
 	for(let i=0 ; i<header.length ; i++) {
 		if(data[num][header[i]].slice(0,4) == "http"){
 			urlcode = "<a href='" + data[num][header[i]] +"' target='_blank'>" + data[num][header[i]] + "</a>" ;
+		}else if(data[num][header[i]].slice(-3).toLowerCase() == "jpg" || data[num][header[i]].slice(-3).toLowerCase() == "png"){
+			urlcode = "<img src='" + data[num][header[i]] + "'>" ;
 		}else{
 			urlcode = data[num][header[i]]  ;
 		}
