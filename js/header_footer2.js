@@ -38,4 +38,6 @@ function makeHeaderFooter(){
 		});
 	});
 	
+	callHanbaiData(); //地図のデータを呼び出し
+	
 }
