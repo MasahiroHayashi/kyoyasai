@@ -34,6 +34,7 @@
 <link rel="stylesheet" type="text/css" href="css/common.css">       <!-- 枠組みを指定するスタイルシート -->
 <link rel="stylesheet" type="text/css" href="css/parts.css">        <!-- 見出しなどを指定するスタイルシート -->
 <link rel="stylesheet" type="text/css" href="css/menu.css">         <!-- メニューバー用スタイルシート -->
+<link rel="stylesheet" type="text/css" href="css/sparql.css">
 <script src="js/header_footer2.js"></script>
 
 <script type="text/javascript">
@@ -114,12 +115,34 @@
 
 
 <h4>カードバトルのデータを新たなオープンデータに</h4>
-<img src="img/kyoyasai2.png" class="floatimg_l2">
 <p class="type2">
-「KyoYasai 京育カードバトル」で利用している各野菜のデータを、新たなオープンデータセットとして公開いたします。プログラミング教育用の教材として、あるいは地産地消・食育等の理解を深めるためにご利用いただければ幸いです。<br><br>
-<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank"><img src="img/by.png" style="margin-top:5px;vertical-align:-7px;"></a>　<a href="data/yasai.xlsx">京育カードバトルデータ</a>　by　<b>Kyoto Lovers</b>
+「KyoYasai 京育カードバトル」で利用している各野菜のデータを、新たなオープンデータセットとして公開いたします。プログラミング教育用の教材として、あるいは地産地消・食育等の理解を深めるためにご利用いただければ幸いです。
 </p>
+<div style="">
+<img src="img/5star.png" class="floatimg_l2">
+<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank"><img src="img/by.png" style="margin:5px 0 10px 0;vertical-align:-7px;"></a>　<a href="data/yasai.xlsx">京育カードバトルデータ</a>　by　<b>Kyoto Lovers</b><br>
+<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank"><img src="img/by.png" style="margin:5px 0 10px 0;vertical-align:-7px;"></a>　<a href="data/yasai.ttl">京育カードバトルデータLOD</a>　by　<b>Kyoto Lovers</b>
+</div>
+<p class="type2" style="clear: both; margin-top:50px;">
+「KyoYasai 京育カードバトルデータ」は五つ星オープンデータであるLinked Open Data（LOD）に対応しており、APIを通じて動的にデータ取得することも可能です。WEBアプリケーションの作成等にぜひご利用ください。
+SPARQLクエリの記載例は <a href="" target="_blank">こちら</a> をご覧ください。
+<div style="margin-left:15px"><B>SPARQL Endpoint URI： <a href="https://dydra.com/haychmash/yasai/sparql" target="_blank">https://dydra.com/haychmash/yasai/sparql</a></B></div>
 </p>
+<form id="form1" name="myForm"> 
+<textarea id="query" style="width:97%; height:100px;">
+PREFIX yasai: <https://kyoyasai.mirko.jp/yasaiLOD?>
+select *
+where {
+  yasai:K001 ?p ?o .
+} limit 10
+</textarea>
+<input type="button" value="クエリ実行" onclick="execute()">
+</form>
+<div id="results"></div>
+
+
+
+
 
 <h4>京の旬野菜販売所／朝市の一覧</h4>
 <p style="line-height:150%;">
@@ -165,14 +188,12 @@
 
 
 <!-- 地図表示用 -->
-
 <script src="js/hanbaimap.js"></script>
 <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
 <script src='https://unpkg.com/leaflet.gridlayer.googlemutant@latest/Leaflet.GoogleMutant.js'></script>
-<script>
 
-</script>
-
+<!-- SPARQL用 -->
+<script src="js/sparql.js"></script>
 
 </body>
 </html>

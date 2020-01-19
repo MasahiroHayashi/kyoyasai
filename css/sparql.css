@@ -1,0 +1,21 @@
+﻿/**********テーブルのスタイル**********/
+table.type1 {
+	width:100%;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+table.type1 th {
+	border: 0px solid #ccc;
+	border-radius: 3px;
+	font-size: 12px;
+	padding: 4px;
+	color: #fff;
+	background: #003300;
+	text-align: center;
+}
+table.type1 td {
+	border: 0px solid #ccc;
+	background: #EEEEEE ;
+	font-size: 12px;
+	padding: 2px;
+}
