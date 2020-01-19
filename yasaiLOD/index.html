@@ -26,7 +26,7 @@ const global_fileName = "yasai.ttl" ; // ここにＲＤＦファイルのファ
 const global_readCache = 0 ; // 毎回ＲＤＦファイルを読み込む場合は 1 、キャッシュを読む場合は 0 を入力する 
 const global_characterCode = 0 ; // 読み込み元のRDFファイルの文字コードがUTF-8の場合は 0 を、UTF-8以外の場合は 1 をを入力する 
 const global_baseUri = "https://kyoyasai.mirko.jp/yasaiLOD?" ; // ここに参照解決したい事物のURIの、名前空間URI（?を含む?までの部分）を記載する 
-const global_labelUri = "" ; // 各リソースの「名称」を指示する述語を入れる 
+const global_labelUri = "http://www.w3.org/2000/01/rdf-schema#label" ; // 各リソースの「名称」を指示する述語を入れる 
 // ここに利用したい接頭辞と、対応する名前空間URIを記載する 
 prefixArr[0]  = "xsd";   nameSpaceArr[0]  = "http://www.w3.org/2001/XMLSchema#" ;
 prefixArr[1]  = "rdf";   nameSpaceArr[1]  = "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ;
@@ -43,14 +43,16 @@ const global_map = 1 ; // 0は地図表示なし、1はオープンストリー�
 let global_googleApiKey = "" ; // グーグルマップで座標を表示する場合は、あなたのGoogle Maps APIキーを入力する。グーグルマップを使用しない場合はブランクとする 
 </script>
 <style type="text/css">
-/**************************** LOD Smart Index テキストスタイル１ ***************************/
+/**************************** LOD Smart Index テキストスタイル２ ***************************/
 @charset "UTF-8";
+@import url("//fonts.googleapis.com/css?family=Josefin+Sans:300,400,700"); /* Webフォントの読込 */
 html {
 	overflow-y: scroll;
 	word-break: break-all;
 }
 body {
-	background-color: #fff;
+	font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	background-color: #FFEEFF;
 	margin-top:0;
 }
 /********** 全体の枠のスタイル **********/
@@ -66,9 +68,11 @@ body {
 	right: 0;
 	margin: auto;
 }
+
 @media only screen and (max-width:1000px){
 	.inner {width: 100%;}
 }
+
 @media only screen and (max-width:750px){ 
 	body {margin:0;}
 	.inner {
@@ -78,46 +82,42 @@ body {
 }
 /********** ヘッダ部分の背景のスタイル **********/
 .headerBackground { 
-	background-color: #003300;
-	height: 60px;
+	background-color: #fff;
+	height: 38px;
 	border-bottom: 1px solid #bbbbbb;
 	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
-
-@media only screen and (max-width:750px){ 
-	.headerBackground {height: 40px;}
-}
 /********** メニューバーのスタイル **********/
 .dropmenu{
 	*zoom: 1;
 	list-style-type: none;
 	margin: 0 ;
-	padding: 10px 0px 40px 0px ;
+	padding: 0px 0px 40px 0px ;
 	width: 98%;
+	font-family: "Josefin Sans"; /* DBpediaで使っているフォント */
 }
 .dropmenu li{
 	position: relative;
 	float: left;
 	margin: 0px 0px 0px 0px;
-	padding: 8px 90px 0 0 ;
+	padding: 13px 90px 0 0 ;
 }
 .dropmenu li a{
 	display: inline-block;
-	color: #eee;
+	color: #000;
 	text-align: center;
-	text-decoration: none;
-	font-size: 22px; 
+	text-decoration: none; 
 }
 .dropmenu li a:hover {
-	color: #FFF;
+	color: #000;
 	text-decoration: underline;
 }
 #dropmenuClick{
-	color: #FFF; 
-	background: #003300;
+	background: #fff;
+	color: #d9230f; 
 	text-decoration: underline;
 }
 #normalMenu li ul{ display: none; }
@@ -133,38 +133,35 @@ body {
 }
 .dropmenu li ul li{
 	width: 100%;
-	padding: 0 190px 0 0 ;
+	padding: 0px 170px 0px 0px ;
 }
 .dropmenu li ul li a{
 	display: block; 
 	text-align: left;
 	text-indent: 5px;
-	font-size: 16px; 
-	color: #FFFFFF;
-	background: #003300;
+	background: #fff;
+	color: #000000;
 	padding: 5px;
+	padding-top: 9px;
 	border: 1px solid #bbbbbb;
+	text-decoration: none;
 }
 .dropmenu li ul li a:hover {
-	color: #000;
-	background: #FFF;
+	background: #ddd;
+	color: #000000;
 }
-#box2 {padding-top:50px;}
-#box3 {padding-top:50px;}
+#box2 {padding-top:40px;}
+#box3 {padding-top:40px;}
 
-@media only screen and (max-width:1000px){
-	.dropmenu li{padding: 8px 55px 0 0 ;}
-}
 @media only screen and (max-width:750px){
 	.title1 {margin-top:70px;}
 	#box2 {padding-top:80px;}
 	#box3 {padding-top:80px;}
-	.dropmenu{
+	.dropmenu {
 		width: 100%;
 		position: fixed;
 		top: 0;
 		left: 0;
-		padding: 0px 0px 40px 0px ;
 	}
 	.dropmenu li{
 		width: 50%; 
@@ -172,12 +169,11 @@ body {
 	}
 	.dropmenu li a {
 		display: block;
-		background: #003300;
+		background: #fff;
 		border: 1px solid #bbbbbb;
 		padding: 15px 0px 15px 0px ;
 		border-radius: 0;
 		margin: 0;
-		font-size: medium; 
 	}
 	#sparqlQuery{display:none;}
 	#downloadAll{display:none;}
@@ -185,6 +181,7 @@ body {
 /********** リソースの「タイトル」のスタイル **********/
 .title1 {
 	display: inline-block;
+	font-family: "Josefin Sans"; /* DBpediaで使っているフォント */
 	font-size:33px;
 	font-weight:500;
 	border-radius: 0 0 0 0;
@@ -198,10 +195,11 @@ body {
 }
 /********** ダブルクオーテーション・言語・数値型等の付帯情報の色 **********/
 .optionColor {
-	color: #C0C0C0; /* コンテンツ部分に表示される「" "」「@ja」「xsd:decimal」等の文字色。テーブルの背景色に合わせ適当な色に。 */
+	color: #C0C0C0;
 }
 /********** テーブル（共通）のスタイル **********/
 table.type1 {
+	font-size: small;
 	font-weight: normal;
 	text-align: left;
 	width: 98%;
@@ -211,7 +209,7 @@ table.type1 {
 .tableHeader {
 	border-radius: 0 0 0 0; 
 	color: #000;
-	background: #eee ;
+	background: #ddd ;
 	text-align: center;
 	font-weight: normal;
 	padding: 8px;
@@ -224,7 +222,12 @@ table.type1 {
 	border: 1px solid #bbb;
 	text-align: left;
 }
+.tableBody a:link { color: #0000ff; }
+.tableBody a:visited { color: #800080; }
+.tableBody a:hover { color: #ff8000; }
+.tableBody a:active { color: #ff8000; }
 #tableBody300px {width:300px;}
+#tableBody250px {width:250px;}
 #tableBody60px {width:60px;}
 
 @media only screen and (max-width:750px){
@@ -237,11 +240,15 @@ table.type1 {
 		width: 100%;
 		display: block;
 		color: #000;
-		background: #eee;
+		background: #ccc;
 		text-align: left;
 		font-weight: normal;
 		border: 1px solid #bbb;
 	}
+	table.type1 th a:link { color: #000; }
+	table.type1 th a:visited { color: #000; }
+	table.type1 th a:hover { color: #000; }
+	table.type1 th a:active { color: #000; }
 
 	table.type1 td{
 		width: 100%;
@@ -253,6 +260,7 @@ table.type1 {
 		border-bottom: 1px solid #bbb;
 	}
 	#tableBody300px {width:100%;}
+	#tableBody250px {width:100%;}
 	#tableBody60px {width:100%;}
 }
 /********** 検索ボックスの外枠のスタイル **********/
@@ -261,7 +269,7 @@ table.type1 {
 	width: 97%;
 	text-align:center;
 }
-/************  検索用テキストボックスとボタン *************/
+/************ 検索用テキストボックスとボタン *************/
 .textInputClass {
 	height:26px;
 	width:300px;"
@@ -285,7 +293,9 @@ table.type1 {
 	width: 450px;
 	margin: auto;
 }
-#nextPrevFrame td{width: 100px;}
+#nextPrevFrame td{
+	width: 100px;
+}
 
 @media only screen and (max-width:750px){
 	#nextPrevFrame table{width:100%;}
@@ -312,6 +322,9 @@ p.resizeImage img {
 @media only screen and (max-width:450px){
 	p.resizeImage{max-width: 350px;}
 }
+
+/*============= 以下、配色の追加設定 =============*/
+body { background-color:#EDFFE7; }
 
 </style>
 <script type="text/javascript">
