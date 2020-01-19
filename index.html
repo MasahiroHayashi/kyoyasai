@@ -135,7 +135,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 select ?s ?name ?kana
 where {
   ?s  rdfs:label      ?name ;
-      yasai:labelKana ?kana . }order by ?s
+      yasai:labelKana ?kana . 
+}order by ?s  limit 10
 </textarea>
 <input type="button" value="クエリ実行" onclick="execute()">
 </form>
