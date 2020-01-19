@@ -130,11 +130,12 @@
 </p>
 <form id="form1" name="myForm"> 
 <textarea id="query" style="width:97%; height:100px;">
-PREFIX yasai: <https://kyoyasai.mirko.jp/yasaiLOD?>
-select *
+PREFIX yasai: <https://kyoyasai.mirko.jp/schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select ?s ?name ?kana
 where {
-  yasai:K001 ?p ?o .
-} limit 10
+  ?s  rdfs:label      ?name ;
+      yasai:labelKana ?kana . }order by ?s
 </textarea>
 <input type="button" value="クエリ実行" onclick="execute()">
 </form>
