@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+	if(location.protocol == 'http:') { //httpsへリダイレクト
+	  location.replace(location.href.replace(/http:/, 'https:'));
+	}
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+<meta name="description" content="京野菜をより身近に！京都市の京野菜オープンデータをデジタルアプリで。バトルデータを「創る」。プログラミング教育に「京育」効果。" />
+<meta name="keywords" content="京都,京野菜,カードバトル" />
+<link rel="canonical" href="https://kyoyasai.mirko.jp/" /> 
+<link rel="icon" href="img/fabicon.png"><!-- ファビコン -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/icon.png"><!-- スマホ用アイコン -->
+
+<!--OGP設定-->
+<meta property="og:site_name" content="KyoYasai 京育カードバトル with AR" />
+<meta property="og:title" content="KyoYasai 京育カードバトル with AR" />
+<meta property="og:url" content="https://kyoyasai.mirko.jp/" />
+<meta property="og:image" content="https://kyoyasai.mirko.jp/img/fbimg.jpg" />
+<meta property="og:description" content="京野菜をより身近に！京都市の京野菜オープンデータをデジタルアプリで。バトルデータを「創る」。プログラミング教育に「京育」効果。" />
+<meta property="og:type" content="website" />
+<!--Twitter Card設定-->
+<meta name="twitter:image:src" content="https://kyoyasai.mirko.jp/img/fbimg.jpg">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Kyoto Lovers" />
+<meta name="twitter:creator" content="@Kyoto Lovers" />
+<meta name="twitter:title" content="KyoYasai 京育カードバトル with AR" />
+<meta name="twitter:description" content="京野菜をより身近に！京都市の京野菜オープンデータをデジタルアプリで。バトルデータを「創る」。プログラミング教育に「京育」効果。">
+
+
+<title>KyoYasai 京育カードバトル with AR</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">       <!-- 枠組みを指定するスタイルシート -->
+<link rel="stylesheet" type="text/css" href="css/parts.css">        <!-- 見出しなどを指定するスタイルシート -->
+<link rel="stylesheet" type="text/css" href="css/menu.css">         <!-- メニューバー用スタイルシート -->
+<script type="text/javascript" src="js/header_footer.js"></script>  <!-- 共通化したヘッダーとフッターを挿入するスクリプト -->
+<script type="text/javascript">
+	window.addEventListener("load",makeHeaderFooter,false);  // ヘッダーとフッターを挿入
+</script>
+
+
+<style type="text/css">
+table.type2 {
+	width:100%;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+table.type2 th {
+	border: 0px solid #ccc;
+	border-radius: 3px;
+	font-size: 12px;
+	padding: 4px;
+	color: #fff;
+	background: #003300;
+	text-align: center;
+}
+table.type2 td {
+	border: 0px solid #ccc;
+	background: #EEEEEE ;
+	font-size: 12px;
+	padding: 2px;
+}
+</style>
+
+
+</head>
+<body>
+
+<div class="parent" id="parent" style="display:none;">
+<div class="inner">
+<div id="header-box"><!-- ここに「header_footer.js」に書き込まれたヘッダー部分が自動で入ります --></div>
+<div id="main-box">
+
+<h4>京育カードバトルデータLODのメタデータ定義</h4>
+<div style="font-size:small;">
+<p class="type4">baseURI : https://kyoyasai.mirko.jp/yasaiLOD?</p>
+<p class="type4">@prefix <B>yasai</B>: https://kyoyasai.mirko.jp/schema#　（※独自定義語彙）</p>
+<p class="type4">@prefix <B>xsd</B>: http://www.w3.org/2001/XMLSchema#</p>
+<p class="type4">@prefix <B>rdf</B>: http://www.w3.org/1999/02/22-rdf-syntax-ns#</p>
+<p class="type4">@prefix <B>rdfs</B>: http://www.w3.org/2000/01/rdf-schema#</p>
+<p class="type4">@prefix <B>dc</B>: http://purl.org/dc/elements/1.1/</p>
+<p class="type4">@prefix <B>dcterms</B>: http://purl.org/dc/terms/</p>
+<p class="type4">@prefix <B>dcat</B>: http://www.w3.org/ns/dcat#</p>
+<p class="type4">@prefix <B>schema</B>: http://schema.org/</p>
+<p class="type4">@prefix <B>cc</B>: http://creativecommons.org/ns#</p>
+</div>
+<table class="type2">
+<tr><th>語彙</th><th>説明</th><th>データ型</th></tr>
+<tr><td>rdfs:label</td><td>カードの名称</td><td>string</td></tr>
+<tr><td>yasai:labelKana</td><td>カードの名称（かな）</td><td>string</td></tr>
+<tr><td>yasai:hitpoint</td><td>体力（HP）</td><td>integer</td></tr>
+<tr><td>yasai:attack</td><td>攻撃力</td><td>integer</td></tr>
+<tr><td>yasai:defense</td><td>防御力</td><td>integer</td></tr>
+<tr><td>yasai:specialAttack</td><td>特攻（特殊攻撃の攻撃力）</td><td>integer</td></tr>
+<tr><td>yasai:specialDefense</td><td>特防（相手の特殊攻撃に対する防御力）</td><td>integer</td></tr>
+<tr><td>yasai:agility</td><td>素早さ</td><td>integer</td></tr>
+<tr><td>yasai:ability1Name</td><td>技１の名称</td><td>string</td></tr>
+<tr><td>yasai:ability1Description</td><td>技１の説明</td><td>string</td></tr>
+<tr><td>yasai:ability2Type</td><td>技２の区分</td><td>string</td></tr>
+<tr><td>yasai:ability2Code</td><td>技２の区分コード</td><td>string</td></tr>
+<tr><td>yasai:ability2Name</td><td>技２の名称</td><td>string</td></tr>
+<tr><td>yasai:ability2Description</td><td>技２の説明</td><td>string</td></tr>
+<tr><td>yasai:ability2Effect</td><td>技２の区分効果</td><td>string</td></tr>
+<tr><td>yasai:specialSkillType</td><td>特殊スキルの区分</td><td>string</td></tr>
+<tr><td>yasai:specialSkillCode</td><td>特殊スキルの区分コード</td><td>string</td></tr>
+<tr><td>yasai:specialSkillName</td><td>特殊スキルの名称</td><td>string</td></tr>
+<tr><td>yasai:specialSkillDescription</td><td>特殊スキルの説明</td><td>string</td></tr>
+<tr><td>yasai:specialSkillEffect</td><td>特殊スキルの効果</td><td>string</td></tr>
+<tr><td>schema:image</td><td>カード画像のURL</td><td>anyURI</td></tr>
+<tr><td>yasai:cardType</td><td>カード画像の種別</td><td>string</td></tr>
+<tr><td>yasai:brandType</td><td>京野菜のブランド名</td><td>string</td></tr>
+<tr><td>yasai:history</td><td>野菜の来歴</td><td>string</td></tr>
+<tr><td>yasai:feature</td><td>野菜の特徴</td><td>string</td></tr>
+<tr><td>yasai:cultivation</td><td>野菜の栽培方法</td><td>string</td></tr>
+<tr><td>yasai:beginningOfSeason</td><td>野菜の旬の始まり</td><td>string</td></tr>
+<tr><td>yasai:endOfSeason</td><td>野菜の旬の終わり</td><td>string</td></tr>
+<tr><td>dc:source</td><td>出典／参考文献</td><td>string</td></tr>
+<tr><td>dcterms:relation</td><td>出典／参考文献のURL</td><td>anyURI</td></tr>
+<tr><td>yasai:imgProvider</td><td>カード用写真／画像の提供元</td><td>string</td></tr>
+<tr><td>rdfs:seeAlso</td><td>参考となるWEBサイトのURL</td><td>anyURI</td></tr>
+</table>
+
+
+
+<h4>SPARQLクエリ例文集</h4>
+
+<p class="type2" style="margin-bottom:0px;">「賀茂なす」が持つすべての情報を取得</p>
+<pre><code>PREFIX : &lt;https://kyoyasai.mirko.jp/yasaiLOD?&gt;
+select *
+where {
+  :K001 ?p ?o .
+}
+
+</code></pre>
+
+
+<p class="type2" style="margin-bottom:0px;">野菜カードの一覧を表示</p>
+<pre><code>PREFIX yasai: &lt;https://kyoyasai.mirko.jp/schema#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+select ?s ?name ?kana
+where {
+  ?s  rdfs:label      ?name ;
+      yasai:labelKana ?kana .
+}
+
+</code></pre>
+
+
+<p class="type2" style="margin-bottom:0px;">攻撃力の高い野菜10傑を抽出</p>
+<pre><code>PREFIX yasai: &lt;https://kyoyasai.mirko.jp/schema#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+select ?name ?attack
+where {
+  ?s  rdfs:label    ?name ;
+      yasai:attack  ?attack .
+} order by desc (?attack)
+limit 10
+
+</code></pre>
+
+
+<p class="type2" style="margin-bottom:0px;">大根族のみ抽出</p>
+<pre><code>PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+select ?s ?name
+where {
+  ?s  rdfs:label  ?name ;
+  FILTER(regex(str(?name), '大根|だいこん' ))
+} 
+
+</code></pre>
+
+<p class="type2" style="margin-bottom:0px;">データセットの情報を表示</p>
+<pre><code>select *
+where {
+  &lt;https://kyoyasai.mirko.jp/data/yasai.ttl&gt; ?p ?o .
+}
+
+</code></pre>
+
+
+
+</div>
+
+
+<div id="footer-box"><!-- ここに「header_footer.js」に書き込まれたフッター部分が自動で入ります --></div>
+
+
+</div><!-- class="inner"終了 -->
+</div><!-- class="parent"終了 -->
+</body>
+</html>
