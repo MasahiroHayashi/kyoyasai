@@ -32,12 +32,12 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "強光反射" ;
        yasai:ability2Description  "つやつや真ん丸のボティ！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "パッシブ" ;
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "賀茂の清流" ;
        yasai:specialSkillDescription  "鴨川の上流は賀茂川！" ;
-       yasai:specialSkillEffect  "味方一体を選択し、その味方が攻撃される、またはデバフ効果をかけられたとき、一回だけ無効化する" ;
+       yasai:specialSkillEffect  "味方一体を選択し、その味方が攻撃される、またはデバフ効果をかけられたとき、3回だけ無効化する" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K001.jpg> ;
        yasai:cardType  "ゴールド赤" ;
        yasai:brandType  "京の伝統野菜／京のブランド産品" ;
@@ -66,7 +66,7 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "にしん合体" ;
        yasai:ability2Description  "なすとにしんのタイタン！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "パッシブ" ;
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "音羽山" ;
@@ -104,7 +104,7 @@
        yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "美味名水" ;
        yasai:specialSkillDescription  "伏見の名水で酒造り！" ;
-       yasai:specialSkillEffect  "味方へのバフ効果が倍になる" ;
+       yasai:specialSkillEffect  "味方の技2の効果が2倍になる" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K003.jpg> ;
        yasai:cardType  "ゴールド赤" ;
        yasai:brandType  "京の伝統野菜／京のブランド産品" ;
@@ -138,7 +138,7 @@
        yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "安楽寺" ;
        yasai:specialSkillDescription  "安楽寺の鹿ケ谷カボチャ供養！" ;
-       yasai:specialSkillEffect  "この野菜に攻撃される度、ダメージを受けた後に、攻撃してきた敵の攻撃力・特攻-5" ;
+       yasai:specialSkillEffect  "毎ターン、ランダムに敵一体の防御力・特防-4" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K004.jpg> ;
        yasai:cardType  "ゴールド赤" ;
        yasai:brandType  "京の伝統野菜／京のブランド産品" ;
@@ -201,11 +201,11 @@
        yasai:ability2Name  "とろけビーム" ;
        yasai:ability2Description  "とろける食味！" ;
        yasai:ability2Effect  "敵の防御力ダウン！" ;
-       yasai:specialSkillType  "アクティブ" ;
-       yasai:specialSkillCode  "AS" ;
+       yasai:specialSkillType  "パッシブ" ;
+       yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "聖護院" ;
        yasai:specialSkillDescription  "聖護院で修験道の修行！" ;
-       yasai:specialSkillEffect  "5ターン目以降、味方全体の攻撃力常に+30" ;
+       yasai:specialSkillEffect  "味方全体に対し、攻撃される、またはデバフ効果をかけられたとき、1回だけ無効化する" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K006.jpg> ;
        yasai:cardType  "ゴールド赤" ;
        yasai:brandType  "京の伝統野菜／京のブランド産品" ;
@@ -235,11 +235,11 @@
        yasai:ability2Name  "かぶら蒸し" ;
        yasai:ability2Description  "ふわふわのかぶら蒸しで癒される！" ;
        yasai:ability2Effect  "味方の防御力アップ！" ;
-       yasai:specialSkillType  "パッシブ" ;
-       yasai:specialSkillCode  "PS" ;
+       yasai:specialSkillType  "アクティブ" ;
+       yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "修行僧" ;
        yasai:specialSkillDescription  "聖護院で修験道の修行！" ;
-       yasai:specialSkillEffect  "次のターンから2ターンの間、行動不能になる。その後、味方全体の防御力・特防+30" ;
+       yasai:specialSkillEffect  "毎ターン、ランダムに敵一体のパラメータ-3" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K007.jpg> ;
        yasai:cardType  "ゴールド赤" ;
        yasai:brandType  "京の伝統野菜／京のブランド産品" ;
@@ -269,11 +269,11 @@
        yasai:ability2Name  "アリシン分泌" ;
        yasai:ability2Description  "風邪に効く成分を摂取！" ;
        yasai:ability2Effect  "味方の防御力アップ！" ;
-       yasai:specialSkillType  "パッシブ" ;
-       yasai:specialSkillCode  "PS" ;
+       yasai:specialSkillType  "アクティブ" ;
+       yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "葉ねぎの王者" ;
        yasai:specialSkillDescription  "ねぎ族の王者の風格。！" ;
-       yasai:specialSkillEffect  "次の1ターンの間、この野菜の攻撃力が1.2倍になる。" ;
+       yasai:specialSkillEffect  "毎ターン、ランダムに味方一体のパラメータ+4" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K008.jpg> ;
        yasai:cardType  "ゴールド赤" ;
        yasai:brandType  "京の伝統野菜／京のブランド産品" ;
@@ -307,7 +307,7 @@
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "清流堀川" ;
        yasai:specialSkillDescription  "堀川のせせらぎ復活祈願！" ;
-       yasai:specialSkillEffect  "味方をHP30で復活" ;
+       yasai:specialSkillEffect  "味方一体のHPを味方の最大HPと同じにする" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K009.jpg> ;
        yasai:cardType  "ゴールド赤" ;
        yasai:brandType  "京の伝統野菜／京のブランド産品" ;
@@ -336,12 +336,12 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "雨乞い" ;
        yasai:ability2Description  "雨に濡れて頭を冷やせ！" ;
-       yasai:ability2Effect  "－" ;
-       yasai:specialSkillType  "パッシブ" ;
-       yasai:specialSkillCode  "PS" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
+       yasai:specialSkillType  "アクティブ" ;
+       yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "水のいやし" ;
        yasai:specialSkillDescription  "命育むいやしの水！" ;
-       yasai:specialSkillEffect  "3ターンの間、ターンが終わるごとに味方一体のHP+20" ;
+       yasai:specialSkillEffect  "毎ターン、ランダムに味方一体の攻撃力・防御力+5" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K010.jpg> ;
        yasai:cardType  "ゴールド赤" ;
        yasai:brandType  "京の伝統野菜／京のブランド産品" ;
@@ -371,11 +371,11 @@
        yasai:ability2Name  "ミブナの舞い" ;
        yasai:ability2Description  "みんなで舞い踊れ！" ;
        yasai:ability2Effect  "味方の攻撃力アップ！" ;
-       yasai:specialSkillType  "パッシブ" ;
-       yasai:specialSkillCode  "PS" ;
+       yasai:specialSkillType  "アクティブ" ;
+       yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "壬生浪士" ;
        yasai:specialSkillDescription  "新選組ゆかりの地で修行！" ;
-       yasai:specialSkillEffect  "次の1ターンの間、味方一体の行動回数を2回にする(パッシブスキルも含む)" ;
+       yasai:specialSkillEffect  "毎ターン、ランダムに味方一体の特攻・特防+5" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K011.jpg> ;
        yasai:cardType  "ゴールド赤" ;
        yasai:brandType  "京の伝統野菜／京のブランド産品" ;
@@ -409,7 +409,7 @@
        yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "クワイエット" ;
        yasai:specialSkillDescription  "静まれ静まれ！" ;
-       yasai:specialSkillEffect  "敵一体行動2回休み" ;
+       yasai:specialSkillEffect  "毎ターン、ランダムに味方一体の特攻・特防+5" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K012.jpg> ;
        yasai:cardType  "ゴールド赤" ;
        yasai:brandType  "京の伝統野菜／京のブランド産品" ;
@@ -439,11 +439,11 @@
        yasai:ability2Name  "縞模様" ;
        yasai:ability2Description  "シマシマで目くらまし！" ;
        yasai:ability2Effect  "敵の攻撃力ダウン！" ;
-       yasai:specialSkillType  "パッシブ" ;
-       yasai:specialSkillCode  "PS" ;
+       yasai:specialSkillType  "アクティブ" ;
+       yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "ＡＢＩＭＯ" ;
        yasai:specialSkillDescription  "イングリッシュで混乱させろ！" ;
-       yasai:specialSkillEffect  "敵一体を選択する。選択した敵の次の行動を技1にしてランダムな敵一体を攻撃する。" ;
+       yasai:specialSkillEffect  "毎ターン、ランダムに味方一体の特攻・特防+5" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K013.jpg> ;
        yasai:cardType  "ゴールド赤" ;
        yasai:brandType  "京の伝統野菜／京のブランド産品" ;
@@ -505,7 +505,7 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "ブーメラン" ;
        yasai:ability2Description  "くの字に曲がる伝統！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "アクティブ" ;
        yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "さわやかな風" ;
@@ -571,7 +571,7 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "筋肉質" ;
        yasai:ability2Description  "実が締まってるマッチョ大根！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "パッシブ" ;
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "伏見桃山城" ;
@@ -802,7 +802,7 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "巻きつき" ;
        yasai:ability2Description  "長すぎるボディの巻きつき！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "アクティブ" ;
        yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "ロングライダー" ;
@@ -835,7 +835,7 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "畑菜からし和え" ;
        yasai:ability2Description  "子供は泣いちゃう刺激！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "パッシブ" ;
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "菜種油" ;
@@ -868,12 +868,12 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "セリきざみ" ;
        yasai:ability2Description  "細かくきざんで薬味に最高！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "パッシブ" ;
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "爽やかな香り" ;
        yasai:specialSkillDescription  "上品な芳香で鋭気を養え！" ;
-       yasai:specialSkillEffect  "2ターンの間、味方一体の攻撃力・特攻・素早さ+30、防御力・特防-50" ;
+       yasai:specialSkillEffect  "2ターンの間、味方一体の攻撃力・特攻・素早さ+50、防御力・特防-30" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K026.jpg> ;
        yasai:cardType  "ゴールド青" ;
        yasai:brandType  "京の伝統野菜" ;
@@ -1005,7 +1005,7 @@
        yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "とうがらしの女王" ;
        yasai:specialSkillDescription  "万願寺が王様なら鷹峯は女王！" ;
-       yasai:specialSkillEffect  "味方全体の攻撃力常に＋５" ;
+       yasai:specialSkillEffect  "味方全体の攻撃力常に+5" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K030.jpg> ;
        yasai:cardType  "シルバー" ;
        yasai:brandType  "京の伝統野菜に準じる野菜" ;
@@ -1033,7 +1033,7 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "サンシャインフラワー" ;
        yasai:ability2Description  "強い光で敵の目をくらませろ！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "パッシブ" ;
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "菜の花畑" ;
@@ -1133,7 +1133,7 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "大根乱" ;
        yasai:ability2Description  "大根を食べない大根！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "パッシブ" ;
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "花散る里" ;
@@ -1166,7 +1166,7 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "ペッパーリーフ" ;
        yasai:ability2Description  "食べよ葉っぱのとうがらし！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "パッシブ" ;
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "フェイクニュース" ;
@@ -1265,7 +1265,7 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "強化トロミ" ;
        yasai:ability2Description  "普通の里芋より強いとろみ！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "パッシブ" ;
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "京北の風" ;
@@ -1364,7 +1364,7 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "紫の誘惑" ;
        yasai:ability2Description  "豆の薄皮のうす紫に萌えろ！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "パッシブ" ;
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "丹波黒大豆" ;
@@ -1397,7 +1397,7 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "純白の肌" ;
        yasai:ability2Description  "きめ細かな白肌に萌えろ！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "アクティブ" ;
        yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "スタイル抜群" ;
@@ -1463,12 +1463,12 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "幻のキノコ" ;
        yasai:ability2Description  "珍しすぎる野生の本しめじ！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "パッシブ" ;
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "本物の誇り" ;
        yasai:specialSkillDescription  "ブナシメジじゃない本しめじ！" ;
-       yasai:specialSkillEffect  "敵一体の行動を一回休み　この野菜の行動も一回休み" ;
+       yasai:specialSkillEffect  "味方一体を選択し、その味方が攻撃される、またはデバフ効果をかけられたとき、1回だけ無効化する" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K044.jpg> ;
        yasai:cardType  "ブラウン" ;
        yasai:brandType  "京のブランド産品" ;
@@ -1501,7 +1501,7 @@
        yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "丹後の逸品" ;
        yasai:specialSkillDescription  "丹後地域の豊かな自然！" ;
-       yasai:specialSkillEffect  "味方の防御力・特防常に+3" ;
+       yasai:specialSkillEffect  "味方全体の防御力・特防常に+3" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K045.jpg> ;
        yasai:cardType  "ブラウン" ;
        yasai:brandType  "京のブランド産品" ;
@@ -1628,7 +1628,7 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "ジャンボ豆" ;
        yasai:ability2Description  "豆族のタイタン！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "パッシブ" ;
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "夜霧" ;
@@ -1649,12 +1649,12 @@
 
 :K050  rdfs:label  "洛いも"@ja ;
        yasai:labelKana  "らくいも"@ja ;
-       yasai:hitpoint  "100"^^xsd:integer ;
-       yasai:attack  "60"^^xsd:integer ;
-       yasai:defense  "43"^^xsd:integer ;
-       yasai:specialAttack  "55"^^xsd:integer ;
-       yasai:specialDefense  "0"^^xsd:integer ;
-       yasai:agility  "12"^^xsd:integer ;
+       yasai:hitpoint  "120"^^xsd:integer ;
+       yasai:attack  "40"^^xsd:integer ;
+       yasai:defense  "60"^^xsd:integer ;
+       yasai:specialAttack  "40"^^xsd:integer ;
+       yasai:specialDefense  "60"^^xsd:integer ;
+       yasai:agility  "5"^^xsd:integer ;
        yasai:ability1Name  "いもキャノン" ;
        yasai:ability1Description  "大きいサイズは重量感もすごい！" ;
        yasai:ability2Type  "味方にバフ" ;
@@ -1662,11 +1662,11 @@
        yasai:ability2Name  "いもづるバリア" ;
        yasai:ability2Description  "光と熱をさえぎるステキなつる！" ;
        yasai:ability2Effect  "味方の防御力アップ！" ;
-       yasai:specialSkillType  "パッシブ" ;
-       yasai:specialSkillCode  "PS" ;
+       yasai:specialSkillType  "アクティブ" ;
+       yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "いもの可能性" ;
        yasai:specialSkillDescription  "スイーツ、焼酎でも大活躍！" ;
-       yasai:specialSkillEffect  "3ターンの間、味方全体のパラメータ+10" ;
+       yasai:specialSkillEffect  "毎ターン、ランダムに味方一体の防御力・特防+15" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K050.jpg> ;
        yasai:cardType  "光沢レッド" ;
        yasai:brandType  "－" ;
@@ -1682,24 +1682,24 @@
 
 :K051  rdfs:label  "京町セイカ"@ja ;
        yasai:labelKana  "きょうまちせいか"@ja ;
-       yasai:hitpoint  "130"^^xsd:integer ;
-       yasai:attack  "60"^^xsd:integer ;
-       yasai:defense  "37"^^xsd:integer ;
-       yasai:specialAttack  "37"^^xsd:integer ;
-       yasai:specialDefense  "6"^^xsd:integer ;
-       yasai:agility  "0"^^xsd:integer ;
+       yasai:hitpoint  "250"^^xsd:integer ;
+       yasai:attack  "90"^^xsd:integer ;
+       yasai:defense  "60"^^xsd:integer ;
+       yasai:specialAttack  "50"^^xsd:integer ;
+       yasai:specialDefense  "55"^^xsd:integer ;
+       yasai:agility  "110"^^xsd:integer ;
        yasai:ability1Name  "セイカビーム" ;
        yasai:ability1Description  "未来の技術はすごいのです！" ;
        yasai:ability2Type  "味方にバフ" ;
        yasai:ability2Code  "MB" ;
        yasai:ability2Name  "セイカオーラ" ;
        yasai:ability2Description  "精華の魅力、いっぱい伝わって！！" ;
-       yasai:ability2Effect  "味方の攻撃力アップ！" ;
+       yasai:ability2Effect  "味方の特攻アップ！" ;
        yasai:specialSkillType  "パッシブ" ;
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "精華をしるもの" ;
        yasai:specialSkillDescription  "みなさん、精華町に来てね！！" ;
-       yasai:specialSkillEffect  "4ターンの間、味方全体の素早さ+10" ;
+       yasai:specialSkillEffect  "味方全体に対し、攻撃される、またはデバフ効果をかけられたとき、3回だけ無効化する" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K051.jpg> ;
        yasai:cardType  "光沢レッド" ;
        yasai:brandType  "－" ;
@@ -1715,24 +1715,24 @@
 
 :K052  rdfs:label  "精華町の夏秋いちご"@ja ;
        yasai:labelKana  "せいかちょうのかしゅういちご"@ja ;
-       yasai:hitpoint  "90"^^xsd:integer ;
-       yasai:attack  "75"^^xsd:integer ;
-       yasai:defense  "19"^^xsd:integer ;
-       yasai:specialAttack  "49"^^xsd:integer ;
-       yasai:specialDefense  "22"^^xsd:integer ;
-       yasai:agility  "15"^^xsd:integer ;
+       yasai:hitpoint  "120"^^xsd:integer ;
+       yasai:attack  "60"^^xsd:integer ;
+       yasai:defense  "40"^^xsd:integer ;
+       yasai:specialAttack  "60"^^xsd:integer ;
+       yasai:specialDefense  "40"^^xsd:integer ;
+       yasai:agility  "30"^^xsd:integer ;
        yasai:ability1Name  "いちごシャワー" ;
        yasai:ability1Description  "いちご本来の甘みをご賞味あれ！" ;
        yasai:ability2Type  "味方にバフ" ;
        yasai:ability2Code  "MB" ;
        yasai:ability2Name  "満点栄養パワー" ;
        yasai:ability2Description  "いっぱい食べて栄養補給！" ;
-       yasai:ability2Effect  "味方の防御力アップ！" ;
-       yasai:specialSkillType  "パッシブ" ;
-       yasai:specialSkillCode  "PS" ;
+       yasai:ability2Effect  "味方の攻撃力アップ！" ;
+       yasai:specialSkillType  "アクティブ" ;
+       yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "いちごスイーツ盛り合わせ" ;
        yasai:specialSkillDescription  "和菓子洋菓子なんでもオッケー！" ;
-       yasai:specialSkillEffect  "敵全体一回休み" ;
+       yasai:specialSkillEffect  "毎ターン、ランダムに味方一体の攻撃力・特攻+15" ;
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K052.jpg> ;
        yasai:cardType  "光沢レッド" ;
        yasai:brandType  "－" ;
@@ -1746,14 +1746,14 @@
        yasai:imgProvider  "精華町役場" ;
        rdfs:seeAlso  <https://www.sankei.com/west/news/190712/wst1907120004-n1.html> .
 
-:N001  rdfs:label  "室町時代の蔬菜図"@ja ;
+:K053  rdfs:label  "室町時代の蔬菜図"@ja ;
        yasai:labelKana  "むろまちじだいのそさいず"@ja ;
-       yasai:hitpoint  "56"^^xsd:integer ;
-       yasai:attack  "70"^^xsd:integer ;
-       yasai:defense  "38"^^xsd:integer ;
-       yasai:specialAttack  "29"^^xsd:integer ;
-       yasai:specialDefense  "45"^^xsd:integer ;
-       yasai:agility  "32"^^xsd:integer ;
+       yasai:hitpoint  "500"^^xsd:integer ;
+       yasai:attack  "100"^^xsd:integer ;
+       yasai:defense  "100"^^xsd:integer ;
+       yasai:specialAttack  "70"^^xsd:integer ;
+       yasai:specialDefense  "70"^^xsd:integer ;
+       yasai:agility  "100"^^xsd:integer ;
        yasai:ability1Name  "文化財指定ビーム" ;
        yasai:ability1Description  "文化財指定の重みを思い知れ！" ;
        yasai:ability2Type  "敵にデバフ" ;
@@ -1765,8 +1765,8 @@
        yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "謎のなす" ;
        yasai:specialSkillDescription  "謎のなすで防御を強化！" ;
-       yasai:specialSkillEffect  "味方全体の防御力・特防常に+3" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N001.jpg> ;
+       yasai:specialSkillEffect  "毎ターン、ランダムに味方一体の防御力・特防+10、HP+30" ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K053.jpg> ;
        yasai:cardType  "光沢グリーン" ;
        yasai:brandType  "－" ;
        yasai:history  "室町時代、狩野秀頼筆" ;
@@ -1780,7 +1780,7 @@
        rdfs:seeAlso  <https://colbase.nich.go.jp/collectionItems/view/12f08f3c06a62af80737925634848303/189504> ;
        rdfs:seeAlso  <https://jpsearch.go.jp/item/cobas-160692> .
 
-:N002  rdfs:label  "昔の菜の花"@ja ;
+:K054  rdfs:label  "昔の菜の花"@ja ;
        yasai:labelKana  "むかしのなのはな"@ja ;
        yasai:hitpoint  "90"^^xsd:integer ;
        yasai:attack  "55"^^xsd:integer ;
@@ -1795,12 +1795,12 @@
        yasai:ability2Name  "菜の花畑" ;
        yasai:ability2Description  "モンシロチョウのように舞え！" ;
        yasai:ability2Effect  "味方の攻撃力アップ！" ;
-       yasai:specialSkillType  "パッシブ" ;
-       yasai:specialSkillCode  "PS" ;
+       yasai:specialSkillType  "アクティブ" ;
+       yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "中華統一" ;
        yasai:specialSkillDescription  "武の力で中華統一！" ;
-       yasai:specialSkillEffect  "2ターンの間、敵一体の防御力-20" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N002.jpg> ;
+       yasai:specialSkillEffect  "毎ターン、ランダムに味方一体のパラメータ+20" ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K054.jpg> ;
        yasai:cardType  "光沢グリーン" ;
        yasai:brandType  "－" ;
        yasai:history  "中国、近代、容祖椿（仲生）筆" ;
@@ -1814,7 +1814,7 @@
        rdfs:seeAlso  <https://colbase.nich.go.jp/collectionItems/view/94cc071c58058a06910f6fac69566a0d/22082> ;
        rdfs:seeAlso  <https://jpsearch.go.jp/item/cobas-5019> .
 
-:N003  rdfs:label  "甘藍（キャベージ）"@ja ;
+:K055  rdfs:label  "甘藍（キャベージ）"@ja ;
        yasai:labelKana  "かんらん"@ja ;
        yasai:hitpoint  "120"^^xsd:integer ;
        yasai:attack  "30"^^xsd:integer ;
@@ -1829,12 +1829,12 @@
        yasai:ability2Name  "甘藍車" ;
        yasai:ability2Description  "ぐるぐる回って目が回る！" ;
        yasai:ability2Effect  "敵の素早さダウン！" ;
-       yasai:specialSkillType  "パッシブ" ;
-       yasai:specialSkillCode  "PS" ;
+       yasai:specialSkillType  "アクティブ" ;
+       yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "胃腸に優しい" ;
        yasai:specialSkillDescription  "キャベツ力でお腹の調子ＵＰ！" ;
-       yasai:specialSkillEffect  "3ターンの間、味方一体の攻撃力+15" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N003.jpg> ;
+       yasai:specialSkillEffect  "毎ターン、ランダムに味方一体のHP+50" ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K055.jpg> ;
        yasai:cardType  "光沢ブラック" ;
        yasai:brandType  "－" ;
        yasai:history  "甘藍（かんらん）は西洋蔬菜の中で最も早く日本に伝わったもので、現代でいうキャベツのことである。欧米から取り寄せた種子により明治時代から栽培が始まった。これ以前にも、江戸時代前期にオランダから持ち込まれ、一部で栽培されていたと見られる。" ;
@@ -1847,7 +1847,7 @@
        yasai:imgProvider  "国立国会図書館デジタルコレクション" ;
        rdfs:seeAlso  <https://dl.ndl.go.jp/info:ndljp/pid/840212/35> .
 
-:N004  rdfs:label  "牛蒡"@ja ;
+:K056  rdfs:label  "牛蒡"@ja ;
        yasai:labelKana  "ごぼう"@ja ;
        yasai:hitpoint  "110"^^xsd:integer ;
        yasai:attack  "60"^^xsd:integer ;
@@ -1861,13 +1861,13 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "土のかおり" ;
        yasai:ability2Description  "香り高き土付き牛蒡！" ;
-       yasai:ability2Effect  "－" ;
-       yasai:specialSkillType  "アクティブ" ;
-       yasai:specialSkillCode  "AS" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
+       yasai:specialSkillType  "パッシブ" ;
+       yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "神代の野菜" ;
        yasai:specialSkillDescription  "日本古来の伝統力！" ;
-       yasai:specialSkillEffect  "味方全体の攻撃力・特攻常に+3" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N004.jpg> ;
+       yasai:specialSkillEffect  "3ターンの間、味方全体の防御力・特防+50" ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K056.jpg> ;
        yasai:cardType  "光沢ブラック" ;
        yasai:brandType  "－" ;
        yasai:history  "牛蒡（ごぼう）は日本の原産で欧米諸国には絶えて見ざる所で米国の如きは之に似した野生品があるだけである。" ;
@@ -1880,9 +1880,9 @@
        yasai:imgProvider  "国立国会図書館デジタルコレクション" ;
        rdfs:seeAlso  <https://dl.ndl.go.jp/info:ndljp/pid/840212/29> .
 
-:N005  rdfs:label  "波羅門参"@ja ;
+:K057  rdfs:label  "波羅門参"@ja ;
        yasai:labelKana  "ばらもんじん"@ja ;
-       yasai:hitpoint  "80"^^xsd:integer ;
+       yasai:hitpoint  "130"^^xsd:integer ;
        yasai:attack  "100"^^xsd:integer ;
        yasai:defense  "30"^^xsd:integer ;
        yasai:specialAttack  "5"^^xsd:integer ;
@@ -1899,8 +1899,8 @@
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "オーパーツ野菜" ;
        yasai:specialSkillDescription  "私は人参ではないのだ！" ;
-       yasai:specialSkillEffect  "2ターンの間、敵一体の攻撃力-20" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N005.jpg> ;
+       yasai:specialSkillEffect  "味方全体に対し、攻撃される、またはデバフ効果をかけられたとき、1回だけ無効化する" ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K057.jpg> ;
        yasai:cardType  "光沢ブラック" ;
        yasai:brandType  "－" ;
        yasai:history  "この植物は二年草でヨーロッパ東南部の原産である。" ;
@@ -1913,9 +1913,9 @@
        yasai:imgProvider  "国立国会図書館デジタルコレクション" ;
        rdfs:seeAlso  <https://dl.ndl.go.jp/info:ndljp/pid/840212/34> .
 
-:N006  rdfs:label  "百合の球根"@ja ;
+:K058  rdfs:label  "百合の球根"@ja ;
        yasai:labelKana  "ゆりのたまね"@ja ;
-       yasai:hitpoint  "130"^^xsd:integer ;
+       yasai:hitpoint  "180"^^xsd:integer ;
        yasai:attack  "48"^^xsd:integer ;
        yasai:defense  "37"^^xsd:integer ;
        yasai:specialAttack  "50"^^xsd:integer ;
@@ -1932,8 +1932,8 @@
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "貴婦人の花" ;
        yasai:specialSkillDescription  "高貴な婦人の魅惑！" ;
-       yasai:specialSkillEffect  "3ターンの間、味方一体の防御力+10" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N006.jpg> ;
+       yasai:specialSkillEffect  "3ターンの間、味方全体の防御力・特攻+40" ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K058.jpg> ;
        yasai:cardType  "光沢ブラック" ;
        yasai:brandType  "－" ;
        yasai:history  "百合は主にその花を賞するために栽植せられるので食用に供せらるるものは巻丹（おにゆり）及び山丹（ひめゆり）の二種類である。二種共にいずれの地の原産であるか明らかならざれども、本邦の山野等に野生するを見れば日本のあろうと思われる。" ;
@@ -1946,9 +1946,9 @@
        yasai:imgProvider  "国立国会図書館デジタルコレクション" ;
        rdfs:seeAlso  <https://dl.ndl.go.jp/info:ndljp/pid/840212/31> .
 
-:N007  rdfs:label  "京菜"@ja ;
+:K059  rdfs:label  "京菜"@ja ;
        yasai:labelKana  "きょうな"@ja ;
-       yasai:hitpoint  "90"^^xsd:integer ;
+       yasai:hitpoint  "140"^^xsd:integer ;
        yasai:attack  "77"^^xsd:integer ;
        yasai:defense  "45"^^xsd:integer ;
        yasai:specialAttack  "38"^^xsd:integer ;
@@ -1965,8 +1965,8 @@
        yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "平安京" ;
        yasai:specialSkillDescription  "平安遷都１２００年の歴史！" ;
-       yasai:specialSkillEffect  "味方全体のすばやさ常に+5" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N007.jpg> ;
+       yasai:specialSkillEffect  "味方の技2の効果が1.5倍になる" ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K059.jpg> ;
        yasai:cardType  "光沢ブラック" ;
        yasai:brandType  "－" ;
        yasai:history  "京菜は古来京都近傍にて栽培したもので、中国地方にては之をみづなとも言い、関東にては京菜と言うのである。その他みぶな、いせな等の称あるも、皆その栽培地の名を取りたるものであろう。" ;
@@ -1979,7 +1979,7 @@
        yasai:imgProvider  "国立国会図書館デジタルコレクション" ;
        rdfs:seeAlso  <https://dl.ndl.go.jp/info:ndljp/pid/840212/52> .
 
-:N008  rdfs:label  "壬生菜"@ja ;
+:K060  rdfs:label  "壬生菜"@ja ;
        yasai:labelKana  "みぶな"@ja ;
        yasai:hitpoint  "80"^^xsd:integer ;
        yasai:attack  "45"^^xsd:integer ;
@@ -1993,13 +1993,13 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "壬生の狼" ;
        yasai:ability2Description  "狼とよばれた菜を怖れよ！" ;
-       yasai:ability2Effect  "－" ;
-       yasai:specialSkillType  "パッシブ" ;
-       yasai:specialSkillCode  "PS" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
+       yasai:specialSkillType  "アクティブ" ;
+       yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "最強の漬物力" ;
        yasai:specialSkillDescription  "僕の漬物は隠れた人気なのだ！" ;
-       yasai:specialSkillEffect  "次の1ターンの間、敵一体の防御力-30" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N008.jpg> ;
+       yasai:specialSkillEffect  "味方全体の防御力常に+30" ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K060.jpg> ;
        yasai:cardType  "光沢ブラック" ;
        yasai:brandType  "－" ;
        yasai:history  "京菜と同じく、京都地方によいものが出ます。壬生から出る菜というところから、壬生菜の名があるのでしょう。今は壬生地方も、大方宅地になっておりますが、京都近郷からは今でもよいものが出ますし、京名物の蕪の千枚漬の付合せとして知られております。" ;
@@ -2012,7 +2012,7 @@
        yasai:imgProvider  "国立国会図書館デジタルコレクション" ;
        rdfs:seeAlso  <https://dl.ndl.go.jp/info:ndljp/pid/1022731/16> .
 
-:N009  rdfs:label  "越瓜の雷干し"@ja ;
+:K061  rdfs:label  "越瓜の雷干し"@ja ;
        yasai:labelKana  "しろうりのかみなりぼし"@ja ;
        yasai:hitpoint  "130"^^xsd:integer ;
        yasai:attack  "79"^^xsd:integer ;
@@ -2031,8 +2031,8 @@
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "オールマイティー" ;
        yasai:specialSkillDescription  "意外と色々な料理に使える！" ;
-       yasai:specialSkillEffect  "次の1ターンの間、味方一体の攻撃力+30" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N009.jpg> ;
+       yasai:specialSkillEffect  "次の1ターンの間、味方全体のパラメータ+30" ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K061.jpg> ;
        yasai:cardType  "光沢ブラック" ;
        yasai:brandType  "－" ;
        yasai:history  "－" ;
@@ -2045,7 +2045,7 @@
        yasai:imgProvider  "国立国会図書館デジタルコレクション" ;
        rdfs:seeAlso  <https://dl.ndl.go.jp/info:ndljp/pid/1022731/46> .
 
-:N010  rdfs:label  "沢庵漬（三月漬け）"@ja ;
+:K062  rdfs:label  "沢庵漬（三月漬け）"@ja ;
        yasai:labelKana  "たくあんづけ みつきづけ"@ja ;
        yasai:hitpoint  "100"^^xsd:integer ;
        yasai:attack  "40"^^xsd:integer ;
@@ -2059,13 +2059,13 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "第一形態" ;
        yasai:ability2Description  "変身前の通常時の力！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "アクティブ" ;
        yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "沢庵和尚の力" ;
        yasai:specialSkillDescription  "沢庵漬の発明者の力！" ;
-       yasai:specialSkillEffect  "味方全体のすばやさ常に+5" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N010.jpg> ;
+       yasai:specialSkillEffect  "毎ターン、ランダムに味方一体のパラメータ+5" ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K062.jpg> ;
        yasai:cardType  "光沢ブラック" ;
        yasai:brandType  "－" ;
        yasai:history  "まず干し大根の首と尻を切り取り、髭根をむしり除ります。この髭根を除るには、大根を逆さに手でしごくのです。次に糠と塩を用意し、篩で丁寧にふるって混ぜ合わせておきます。漬樽の底に、この混ぜ糠を一面にふり撒き、次に大根を並べます。大根と糠とを交互に重ね、全部漬け込みましたら、前に切り落とした大根の葉を樽の一番上に一寸くらいの厚さに並べ、その上に塩叺（しおかます）の空いたのを丸く切って被せ、押蓋をおいて押石をかけます。" ;
@@ -2078,7 +2078,7 @@
        yasai:imgProvider  "国立国会図書館デジタルコレクション" ;
        rdfs:seeAlso  <https://dl.ndl.go.jp/info:ndljp/pid/1022731/11> .
 
-:N011  rdfs:label  "沢庵漬（四月漬け）"@ja ;
+:K063  rdfs:label  "沢庵漬（四月漬け）"@ja ;
        yasai:labelKana  "たくあんづけ よつきづけ"@ja ;
        yasai:hitpoint  "90"^^xsd:integer ;
        yasai:attack  "60"^^xsd:integer ;
@@ -2092,13 +2092,13 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "第二形態" ;
        yasai:ability2Description  "第二形態でパワーアップ！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "パッシブ" ;
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "沢庵和尚の技" ;
        yasai:specialSkillDescription  "沢庵漬の発明者の技！" ;
        yasai:specialSkillEffect  "2ターンの間、敵一体の防御力-20" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N011.jpg> ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K063.jpg> ;
        yasai:cardType  "光沢ブラック" ;
        yasai:brandType  "－" ;
        yasai:history  "まず干し大根の首と尻を切り取り、髭根をむしり除ります。この髭根を除るには、大根を逆さに手でしごくのです。次に糠と塩を用意し、篩で丁寧にふるって混ぜ合わせておきます。漬樽の底に、この混ぜ糠を一面にふり撒き、次に大根を並べます。大根と糠とを交互に重ね、全部漬け込みましたら、前に切り落とした大根の葉を樽の一番上に一寸くらいの厚さに並べ、その上に塩叺（しおかます）の空いたのを丸く切って被せ、押蓋をおいて押石をかけます。" ;
@@ -2111,7 +2111,7 @@
        yasai:imgProvider  "国立国会図書館デジタルコレクション" ;
        rdfs:seeAlso  <https://dl.ndl.go.jp/info:ndljp/pid/1022731/11> .
 
-:N012  rdfs:label  "沢庵漬（五六月漬け）"@ja ;
+:K064  rdfs:label  "沢庵漬（五六月漬け）"@ja ;
        yasai:labelKana  "たくあんづけ ごろくつきづけ"@ja ;
        yasai:hitpoint  "80"^^xsd:integer ;
        yasai:attack  "80"^^xsd:integer ;
@@ -2125,13 +2125,13 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "第三形態" ;
        yasai:ability2Description  "第三形態で超パワーアップ！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "パッシブ" ;
        yasai:specialSkillCode  "PS" ;
        yasai:specialSkillName  "沢庵和尚の心" ;
        yasai:specialSkillDescription  "沢庵漬の発明者の心！" ;
        yasai:specialSkillEffect  "3ターンの間、味方一体の攻撃力+10" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N012.jpg> ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K064.jpg> ;
        yasai:cardType  "光沢ブラック" ;
        yasai:brandType  "－" ;
        yasai:history  "まず干し大根の首と尻を切り取り、髭根をむしり除ります。この髭根を除るには、大根を逆さに手でしごくのです。次に糠と塩を用意し、篩で丁寧にふるって混ぜ合わせておきます。漬樽の底に、この混ぜ糠を一面にふり撒き、次に大根を並べます。大根と糠とを交互に重ね、全部漬け込みましたら、前に切り落とした大根の葉を樽の一番上に一寸くらいの厚さに並べ、その上に塩叺（しおかます）の空いたのを丸く切って被せ、押蓋をおいて押石をかけます。" ;
@@ -2144,9 +2144,9 @@
        yasai:imgProvider  "国立国会図書館デジタルコレクション" ;
        rdfs:seeAlso  <https://dl.ndl.go.jp/info:ndljp/pid/1022731/11> .
 
-:N013  rdfs:label  "沢庵漬（土用越漬け）"@ja ;
+:K065  rdfs:label  "沢庵漬（土用越漬け）"@ja ;
        yasai:labelKana  "たくあんづけ どようこしづけ"@ja ;
-       yasai:hitpoint  "70"^^xsd:integer ;
+       yasai:hitpoint  "120"^^xsd:integer ;
        yasai:attack  "100"^^xsd:integer ;
        yasai:defense  "30"^^xsd:integer ;
        yasai:specialAttack  "50"^^xsd:integer ;
@@ -2158,13 +2158,13 @@
        yasai:ability2Code  "SA" ;
        yasai:ability2Name  "最終形態" ;
        yasai:ability2Description  "最終進化形に驚愕せよ！" ;
-       yasai:ability2Effect  "－" ;
+       yasai:ability2Effect  "敵に特殊攻撃！" ;
        yasai:specialSkillType  "アクティブ" ;
        yasai:specialSkillCode  "AS" ;
        yasai:specialSkillName  "沢庵和尚の奥義" ;
        yasai:specialSkillDescription  "沢庵漬の発明者の奥義！" ;
-       yasai:specialSkillEffect  "味方全体の攻撃力常に+5" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N013.jpg> ;
+       yasai:specialSkillEffect  "毎ターン、ランダムに味方一体のパラメータ+10" ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K065.jpg> ;
        yasai:cardType  "光沢ブラック" ;
        yasai:brandType  "－" ;
        yasai:history  "まず干し大根の首と尻を切り取り、髭根をむしり除ります。この髭根を除るには、大根を逆さに手でしごくのです。次に糠と塩を用意し、篩で丁寧にふるって混ぜ合わせておきます。漬樽の底に、この混ぜ糠を一面にふり撒き、次に大根を並べます。大根と糠とを交互に重ね、全部漬け込みましたら、前に切り落とした大根の葉を樽の一番上に一寸くらいの厚さに並べ、その上に塩叺（しおかます）の空いたのを丸く切って被せ、押蓋をおいて押石をかけます。" ;
@@ -2177,7 +2177,7 @@
        yasai:imgProvider  "国立国会図書館デジタルコレクション" ;
        rdfs:seeAlso  <https://dl.ndl.go.jp/info:ndljp/pid/1022731/11> .
 
-:N014  rdfs:label  "恭菜"@ja ;
+:K066  rdfs:label  "恭菜"@ja ;
        yasai:labelKana  "ふだんそう"@ja ;
        yasai:hitpoint  "80"^^xsd:integer ;
        yasai:attack  "50"^^xsd:integer ;
@@ -2197,7 +2197,7 @@
        yasai:specialSkillName  "シロナっ葉" ;
        yasai:specialSkillDescription  "京都ではシロナと呼ばれることも！" ;
        yasai:specialSkillEffect  "次の1ターンの間、敵一体の特防-30" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N014.jpg> ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K066.jpg> ;
        yasai:cardType  "光沢ブラック" ;
        yasai:brandType  "－" ;
        yasai:history  "－" ;
@@ -2210,7 +2210,7 @@
        yasai:imgProvider  "国立国会図書館デジタルコレクション" ;
        rdfs:seeAlso  <https://dl.ndl.go.jp/info:ndljp/pid/905586/53> .
 
-:N015  rdfs:label  "守口大根"@ja ;
+:K067  rdfs:label  "守口大根"@ja ;
        yasai:labelKana  "もりぐちだいこん"@ja ;
        yasai:hitpoint  "120"^^xsd:integer ;
        yasai:attack  "39"^^xsd:integer ;
@@ -2230,7 +2230,7 @@
        yasai:specialSkillName  "飛騨美濃の力" ;
        yasai:specialSkillDescription  "飛騨・美濃伝統野菜に指定あり！" ;
        yasai:specialSkillEffect  "次の1ターンの間、味方一体の特攻+30" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N015.jpg> ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K067.jpg> ;
        yasai:cardType  "光沢ブラック" ;
        yasai:brandType  "－" ;
        yasai:history  "この種は尾張の原産にして秋大根中最も珍奇なる種類なり。" ;
@@ -2243,7 +2243,7 @@
        yasai:imgProvider  "国立国会図書館デジタルコレクション" ;
        rdfs:seeAlso  <https://dl.ndl.go.jp/info:ndljp/pid/905586/41> .
 
-:N016  rdfs:label  "野蜀葵"@ja ;
+:K068  rdfs:label  "野蜀葵"@ja ;
        yasai:labelKana  "みつば"@ja ;
        yasai:hitpoint  "80"^^xsd:integer ;
        yasai:attack  "65"^^xsd:integer ;
@@ -2263,7 +2263,7 @@
        yasai:specialSkillName  "野蜀葵" ;
        yasai:specialSkillDescription  "読めるかな僕の名前！" ;
        yasai:specialSkillEffect  "味方全体の防御力常に+5" ;
-       schema:image  <https://kyoyasai.mirko.jp/cardimg/N016.jpg> ;
+       schema:image  <https://kyoyasai.mirko.jp/cardimg/K068.jpg> ;
        yasai:cardType  "光沢ブラック" ;
        yasai:brandType  "－" ;
        yasai:history  "－" ;
