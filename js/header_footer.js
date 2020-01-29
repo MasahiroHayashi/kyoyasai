@@ -6,7 +6,7 @@ function makeHeaderFooter(){
 	<ul id="fade-in" class="dropmenu">
 	  <li class="liClassA"><a href="https://kyoyasai.mirko.jp/" style="text-decoration: none;"><span>ＴＯＰ</span></a></li>
 	  <li class="liClassB"><a href="battle.html" style="text-decoration: none;"><span>京育カードバトル</span></a></li>
-	  <li class="liClassB"><a href="ar.html" style="text-decoration: none;"><span>京野菜カードＡＲ</span></a></li>
+	  <!-- <li class="liClassB"><a href="ar.html" style="text-decoration: none;"><span>京野菜カードＡＲ</span></a></li> -->
 	  <li class="liClassB"><a href="card.html" style="text-decoration: none;"><span>カード一覧</span></a></li>
 	  <li class="liClassB"><a href="link.html" style="text-decoration: none;"><span>関連リンク集</span></a></li>
 	</ul>
