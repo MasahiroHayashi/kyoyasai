@@ -1472,9 +1472,9 @@
        schema:image  <https://kyoyasai.mirko.jp/cardimg/K044.jpg> ;
        yasai:cardType  "ブラウン" ;
        yasai:brandType  "京のブランド産品" ;
-       yasai:history  "京丹波町やタカラバイオ、今日丹波森林組合による第三セクター　瑞穂農林株式会社により、工場で人工栽培されています。" ;
+       yasai:history  "京丹波町やタカラバイオ、京丹波森林組合による第三セクター　瑞穂農林株式会社により、工場で人工栽培されています。" ;
        yasai:feature  "「香り松茸、味しめじ」といわれるように旨味成分が多く、料亭などで京料理の食材にも使われています。" ;
-       yasai:cultivation  "技術的に人工栽培が非常に難しく、この工場でしか人工栽培は行われていない希少なこのうこです。" ;
+       yasai:cultivation  "技術的に人工栽培が非常に難しく、この工場でしか人工栽培は行われていない希少なきのこです。" ;
        yasai:beginningOfSeason  "1月上旬" ;
        yasai:endOfSeason  "12月下旬" ;
        dc:source  "京都通百科事典 ウェブサイト" ;
